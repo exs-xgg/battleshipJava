@@ -4,7 +4,7 @@ import java.awt.*;
 
 @SuppressWarnings("serial")
 public class SetShips extends JFrame implements ActionListener, MouseListener{
-	
+	//component declarations
 	boolean isEntered = false;
 	JButton btnCarrier = new JButton("SET CARRIER");
 	JFrame setShips = new JFrame("");
@@ -521,7 +521,7 @@ public class SetShips extends JFrame implements ActionListener, MouseListener{
 		panel_64.setBackground(new Color(0, 204, 255));
 		getContentPane().add(panel_64);
 		
-		//TODO RESET
+		//TODO RESET fxn
 		JButton btnReset = new JButton("RESET");
 		btnReset.addActionListener(new ActionListener() {
 			@Override
@@ -606,7 +606,7 @@ public class SetShips extends JFrame implements ActionListener, MouseListener{
 		lblNewLabel.setBounds(95, 11, 268, 37);
 		getContentPane().add(lblNewLabel);
 		
-		//TODO
+		//TODO selector
 		btnCarrier.setBounds(419, 70, 184, 60);
 		getContentPane().add(btnCarrier);
 		btnCarrier.addActionListener(new ActionListener() {
