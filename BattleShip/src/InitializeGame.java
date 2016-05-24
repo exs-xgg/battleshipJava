@@ -160,7 +160,7 @@ public class InitializeGame extends JFrame implements ActionListener{
 		btnHelp.setBounds(465, 419, 90, 23);
 		getContentPane().add(btnHelp);
 		
-		
+		//TODO COMPONENT ATTRIBUTION
 		button_1.setBackground(new Color(153, 204, 255));
 		button_1.setBounds(36, 43, 53, 51);
 		getContentPane().add(button_1);
@@ -748,7 +748,7 @@ public class InitializeGame extends JFrame implements ActionListener{
 		
 		
 		
-		//ADD ACTION LISTENERS
+		//TODO ADD ACTION LISTENERS
 		button_1.addActionListener(this);
 		button_2.addActionListener(this);
 		button_3.addActionListener(this);
