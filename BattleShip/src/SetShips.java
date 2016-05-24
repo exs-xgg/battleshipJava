@@ -7,6 +7,7 @@ public class SetShips extends JFrame implements ActionListener, MouseListener{
 	//component declarations
 	//TODO
 	boolean isEntered = false;
+	int count = 0;
 	JButton btnCarrier = new JButton("SET CARRIER");
 	JFrame setShips = new JFrame("");
 	JPanel panel_1 = new JPanel();
@@ -528,6 +529,7 @@ public class SetShips extends JFrame implements ActionListener, MouseListener{
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				btnCarrier.setText("SET CARRIER");
+				count =0;
 				panel_1.setBackground(new Color(0, 204, 255));
 				 panel_2.setBackground(new Color(0, 204, 255));
 				 panel_3.setBackground(new Color(0, 204, 255));
@@ -942,7 +944,7 @@ public class SetShips extends JFrame implements ActionListener, MouseListener{
 			((JComponent) e).setBackground(new Color(0,0,0));
 			isEntered = true;
 			}
-		
+		count += 1;
 	}
 	public void mouseEntered(MouseEvent arg0) {
 		// TODO Auto-generated method stub
@@ -971,11 +973,12 @@ public class SetShips extends JFrame implements ActionListener, MouseListener{
 	public void setBoat(){
 	String content = btnCarrier.getText().toLowerCase();
 	if (content.equals("set carrier")){
-		if(isEntered){
+		if(isEntered && (count == 5)){
 	JOptionPane.showMessageDialog(null, "AircraftCarrier SET");
 	JOptionPane.showMessageDialog(null, "Next, set the Battleship by selecting FOUR straight squares.");
 	btnCarrier.setText("SET BATTLESHIP");
 	isEntered = false;
+	count = 0;
 						}
 		else{
 			JOptionPane.showMessageDialog(null, "Please select the CARRIER position");
@@ -984,11 +987,12 @@ public class SetShips extends JFrame implements ActionListener, MouseListener{
 		}
 	
 	else if(content.equals("set battleship")){
-		if(isEntered){
+		if(isEntered && (count == 4)){
 		JOptionPane.showMessageDialog(null, "Battleship SET");
 		JOptionPane.showMessageDialog(null, "Next, set the DESTROYER by selecting THREE straight squares.");
 		btnCarrier.setText("SET DESTROYER");
 		isEntered = false;
+		count = 0;
 						}
 		else{
 			JOptionPane.showMessageDialog(null, "Please select the BATTLESHIP position");
@@ -997,11 +1001,12 @@ public class SetShips extends JFrame implements ActionListener, MouseListener{
 		}
 
 	else if(content.equals("set destroyer")){
-		if(isEntered){
+		if(isEntered && (count == 3)){
 		JOptionPane.showMessageDialog(null, "Destroyer SET");
 		JOptionPane.showMessageDialog(null, "Next, set the FRIGATE by selecting TWO adjacent squares.");
 		btnCarrier.setText("SET FRIGATE");	
-		isEntered = false;			
+		isEntered = false;	
+		count = 0;
 						}
 		else{
 			JOptionPane.showMessageDialog(null, "Please select the DESTROYER position");
@@ -1009,11 +1014,12 @@ public class SetShips extends JFrame implements ActionListener, MouseListener{
 		}
 		}
 	else  if(content.equals("set frigate")){
-		if(isEntered){
+		if(isEntered && (count == 2)){
 		JOptionPane.showMessageDialog(null, "Frigate SET");
 		JOptionPane.showMessageDialog(null, "Next, set the SUBMARINE by selecting ONE square.");
 		btnCarrier.setText("SET SUBMARINE");
 		isEntered = false;
+		count = 0;
 						}
 		else{
 			JOptionPane.showMessageDialog(null, "Please select the FRIGATE position");
@@ -1022,10 +1028,11 @@ public class SetShips extends JFrame implements ActionListener, MouseListener{
 					
 					}//
 	else if(content.equals("set submarine")){
-		if(isEntered){
+		if(isEntered  && (count == 1)){
 		JOptionPane.showMessageDialog(null, "SUBMARINE SET");
 		JOptionPane.showMessageDialog(null, "YOU ARE NOW READY FOR WAR!");
 		btnCarrier.setText("PROCEED");
+		count = 0;
 						}
 		else{
 			JOptionPane.showMessageDialog(null, "Please select the SUBMARINE position");

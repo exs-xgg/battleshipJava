@@ -840,196 +840,260 @@ public class InitializeGame extends JFrame implements ActionListener{
 		Object trigger = e.getSource();
 		
 		if(trigger == button_1){
-			button_1.setBackground(new Color(0, 255, 51));
+			button_1.setBackground(new Color(0, 0, 0));
 		}
 		else if(trigger == button_2){
+			((Component) trigger).setBackground(new Color(0,0,0));
 			JOptionPane.showMessageDialog(null, "Beng");
+			((Component) trigger).setBackground(new Color(0,0,0));
 		}
 		else if(trigger == button_3){
 			JOptionPane.showMessageDialog(null, "Beng");
+			((Component) trigger).setBackground(new Color(0,0,0));
 		}
 		else if(trigger == button_4){
 			JOptionPane.showMessageDialog(null, "Beng");
+			((Component) trigger).setBackground(new Color(0,0,0));
 		}
 		else if(trigger == button_5){
 			JOptionPane.showMessageDialog(null, "Beng");
+			((Component) trigger).setBackground(new Color(0,0,0));
 		}
 		else if(trigger == button_6){
 			JOptionPane.showMessageDialog(null, "Beng");
+			((Component) trigger).setBackground(new Color(0,0,0));
 		}
 		else if(trigger == button_7){
 			JOptionPane.showMessageDialog(null, "Beng");
+			((Component) trigger).setBackground(new Color(0,0,0));
 		}
 		else if(trigger == button_8){
 			JOptionPane.showMessageDialog(null, "Beng");
+			((Component) trigger).setBackground(new Color(0,0,0));
 		}
 		else if(trigger == button_9){
 			JOptionPane.showMessageDialog(null, "Beng");
+			((Component) trigger).setBackground(new Color(0,0,0));
 		}
 		else if(trigger == button_10){
 			JOptionPane.showMessageDialog(null, "Beng");
+			((Component) trigger).setBackground(new Color(0,0,0));
 		}
 		else if(trigger == button_11){
 			JOptionPane.showMessageDialog(null, "Beng");
+			((Component) trigger).setBackground(new Color(0,0,0));
 		}
 		else if(trigger == button_12){
 			JOptionPane.showMessageDialog(null, "Beng");
+			((Component) trigger).setBackground(new Color(0,0,0));
 		}
 		else if(trigger == button_13){
 			JOptionPane.showMessageDialog(null, "Beng");
+			((Component) trigger).setBackground(new Color(0,0,0));
 		}
 		else if(trigger == button_14){
 			JOptionPane.showMessageDialog(null, "Beng");
+			((Component) trigger).setBackground(new Color(0,0,0));
 		}
 		else if(trigger == button_15){
 			JOptionPane.showMessageDialog(null, "Beng");
+			((Component) trigger).setBackground(new Color(0,0,0));
 		}
 		else if(trigger == button_16){
 			JOptionPane.showMessageDialog(null, "Beng");
+			((Component) trigger).setBackground(new Color(0,0,0));
 		}
 		else if(trigger == button_17){
 			JOptionPane.showMessageDialog(null, "Beng");
+			((Component) trigger).setBackground(new Color(0,0,0));
 		}
 		else if(trigger == button_18){
 			JOptionPane.showMessageDialog(null, "Beng");
+			((Component) trigger).setBackground(new Color(0,0,0));
 		}
 		else if(trigger == button_19){
 			JOptionPane.showMessageDialog(null, "Beng");
+			((Component) trigger).setBackground(new Color(0,0,0));
 		}
 		else if(trigger == button_20){
 			JOptionPane.showMessageDialog(null, "Beng");
+			((Component) trigger).setBackground(new Color(0,0,0));
 		}
 		else if(trigger == button_21){
 			JOptionPane.showMessageDialog(null, "Beng");
+			((Component) trigger).setBackground(new Color(0,0,0));
 		}
 		else if(trigger == button_22){
 			JOptionPane.showMessageDialog(null, "Beng");
+			((Component) trigger).setBackground(new Color(0,0,0));
 		}
 		else if(trigger == button_23){
 			JOptionPane.showMessageDialog(null, "Beng");
+			((Component) trigger).setBackground(new Color(0,0,0));
 		}
 		else if(trigger == button_24){
 			JOptionPane.showMessageDialog(null, "Beng");
+			((Component) trigger).setBackground(new Color(0,0,0));
 		}
 		else if(trigger == button_25){
-			JOptionPane.showMessageDialog(null, "Beng");			
+			JOptionPane.showMessageDialog(null, "Beng");	
+			((Component) trigger).setBackground(new Color(0,0,0));		
 		}
 		else if(trigger == button_26){
-			JOptionPane.showMessageDialog(null, "Beng");			
+			JOptionPane.showMessageDialog(null, "Beng");	
+			((Component) trigger).setBackground(new Color(0,0,0));		
 		}
 		else if(trigger == button_27){
 			JOptionPane.showMessageDialog(null, "Beng");
+			((Component) trigger).setBackground(new Color(0,0,0));
 		}
 		else if(trigger == button_28){
 			JOptionPane.showMessageDialog(null, "Beng");
+			((Component) trigger).setBackground(new Color(0,0,0));
 		}
 		else if(trigger == button_29){
 			JOptionPane.showMessageDialog(null, "Beng");
+			((Component) trigger).setBackground(new Color(0,0,0));
 		}
 		else if(trigger == button_30){
 			JOptionPane.showMessageDialog(null, "Beng");
+			((Component) trigger).setBackground(new Color(0,0,0));
 		}
 		else if(trigger == button_31){
 			JOptionPane.showMessageDialog(null, "Beng");
+			((Component) trigger).setBackground(new Color(0,0,0));
 		}
 		else if(trigger == button_32){
 			JOptionPane.showMessageDialog(null, "Beng");
+			((Component) trigger).setBackground(new Color(0,0,0));
 		}
 		else if(trigger == button_33){
 			JOptionPane.showMessageDialog(null, "Beng");
+			((Component) trigger).setBackground(new Color(0,0,0));
 		}
 		else if(trigger == button_34){
 			JOptionPane.showMessageDialog(null, "Beng");
+			((Component) trigger).setBackground(new Color(0,0,0));
 		}
 		else if(trigger == button_35){
 			JOptionPane.showMessageDialog(null, "Beng");
+			((Component) trigger).setBackground(new Color(0,0,0));
 		}
 		else if(trigger == button_36){
 			JOptionPane.showMessageDialog(null, "Beng");
+			((Component) trigger).setBackground(new Color(0,0,0));
 		}
 		else if(trigger == button_37){
 			JOptionPane.showMessageDialog(null, "Beng");
+			((Component) trigger).setBackground(new Color(0,0,0));
 		}
 		else if(trigger == button_38){
 			JOptionPane.showMessageDialog(null, "Beng");
+			((Component) trigger).setBackground(new Color(0,0,0));
 		}
 		else if(trigger == button_39){
 			JOptionPane.showMessageDialog(null, "Beng");
+			((Component) trigger).setBackground(new Color(0,0,0));
 		}
 		else if(trigger == button_40){
 			JOptionPane.showMessageDialog(null, "Beng");
+			((Component) trigger).setBackground(new Color(0,0,0));
 		}
 		else if(trigger == button_41){
 			JOptionPane.showMessageDialog(null, "Beng");
+			((Component) trigger).setBackground(new Color(0,0,0));
 		}
 		else if(trigger == button_42){
 			JOptionPane.showMessageDialog(null, "Beng");
+			((Component) trigger).setBackground(new Color(0,0,0));
 		}
 		else if(trigger == button_43){
 			JOptionPane.showMessageDialog(null, "Beng");
+			((Component) trigger).setBackground(new Color(0,0,0));
 		}
 		else if(trigger == button_44){
 			JOptionPane.showMessageDialog(null, "Beng");
+			((Component) trigger).setBackground(new Color(0,0,0));
 		}
 		else if(trigger == button_45){
 			JOptionPane.showMessageDialog(null, "Beng");
+			((Component) trigger).setBackground(new Color(0,0,0));
 		}
 		else if(trigger == button_46){
 			JOptionPane.showMessageDialog(null, "Beng");
+			((Component) trigger).setBackground(new Color(0,0,0));
 		}
 		else if(trigger == button_47){
 			JOptionPane.showMessageDialog(null, "Beng");
+			((Component) trigger).setBackground(new Color(0,0,0));
 		}
 		else if(trigger == button_48){
 			JOptionPane.showMessageDialog(null, "Beng");
+			((Component) trigger).setBackground(new Color(0,0,0));
 		}
 		else if(trigger == button_49){
 			JOptionPane.showMessageDialog(null, "Beng");
+			((Component) trigger).setBackground(new Color(0,0,0));
 		}
 		else if(trigger == button_50){
 			JOptionPane.showMessageDialog(null, "Beng");
+			((Component) trigger).setBackground(new Color(0,0,0));
 		}
 		else if(trigger == button_51){
 			JOptionPane.showMessageDialog(null, "Beng");
+			((Component) trigger).setBackground(new Color(0,0,0));
 		}
 		else if(trigger == button_52){
 			JOptionPane.showMessageDialog(null, "Beng");
+			((Component) trigger).setBackground(new Color(0,0,0));
 		}
 		else if(trigger == button_53){
 			JOptionPane.showMessageDialog(null, "Beng");
+			((Component) trigger).setBackground(new Color(0,0,0));
 		}
 		else if(trigger == button_54){
 			JOptionPane.showMessageDialog(null, "Beng");
+			((Component) trigger).setBackground(new Color(0,0,0));
 		}
 		else if(trigger == button_55){
 			JOptionPane.showMessageDialog(null, "Beng");
+			((Component) trigger).setBackground(new Color(0,0,0));
 		}
 		else if(trigger == button_56){
 			JOptionPane.showMessageDialog(null, "Beng");
+			((Component) trigger).setBackground(new Color(0,0,0));
 		}
 		else if(trigger == button_57){
 			JOptionPane.showMessageDialog(null, "Beng");
+			((Component) trigger).setBackground(new Color(0,0,0));
 		}
 		else if(trigger == button_58){
 			JOptionPane.showMessageDialog(null, "Beng");
+			((Component) trigger).setBackground(new Color(0,0,0));
 		}
 		else if(trigger == button_59){
 			JOptionPane.showMessageDialog(null, "Beng");
+			((Component) trigger).setBackground(new Color(0,0,0));
 		}
 		else if(trigger == button_60){
 			JOptionPane.showMessageDialog(null, "Beng");
+			((Component) trigger).setBackground(new Color(0,0,0));
 		}
 		else if(trigger == button_61){
 			JOptionPane.showMessageDialog(null, "Beng");
+			((Component) trigger).setBackground(new Color(0,0,0));
 		}
 		else if(trigger == button_63){
-			JOptionPane.showMessageDialog(null, "Beng");		
+			JOptionPane.showMessageDialog(null, "Beng");
+			((Component) trigger).setBackground(new Color(0,0,0));		
 		}
 		else if(trigger == button_62){
-			JOptionPane.showMessageDialog(null, "Beng");		
+			JOptionPane.showMessageDialog(null, "Beng");	
+			((Component) trigger).setBackground(new Color(0,0,0));	
 		}
 		else if(trigger == button_64){
-			JOptionPane.showMessageDialog(null, "Beng");		
+			JOptionPane.showMessageDialog(null, "Beng");	
+			((Component) trigger).setBackground(new Color(0,0,0));	
 		}
 		else JOptionPane.showMessageDialog(null, "wtf");
 		
