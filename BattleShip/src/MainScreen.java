@@ -46,7 +46,7 @@ public class MainScreen extends JFrame implements ActionListener{
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		
 	}
-	
+	//
 	public void actionPerformed(ActionEvent e){
 
 		name1 = txtName.getText().toUpperCase();

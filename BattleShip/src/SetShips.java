@@ -1018,7 +1018,7 @@ public class SetShips extends JFrame implements ActionListener, MouseListener{
 			JOptionPane.showMessageDialog(null, "Set the FRIGATE by selecting TWO squares");
 		}
 					
-					}
+					}//
 	else if(content.equals("set submarine")){
 		if(isEntered){
 		JOptionPane.showMessageDialog(null, "SUBMARINE SET");

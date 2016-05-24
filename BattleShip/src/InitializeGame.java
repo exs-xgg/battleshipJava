@@ -140,6 +140,7 @@ public class InitializeGame extends JFrame implements ActionListener{
 	private final JPanel panel_62 = new JPanel();
 	private final JPanel panel_63 = new JPanel();
 	//TODO beginning of constructor
+	//asd
 	public InitializeGame(){
 		super("Set Up Game");
 		setIconImage(Toolkit.getDefaultToolkit().getImage(InitializeGame.class.getResource("/com/sun/java/swing/plaf/windows/icons/Error.gif")));
