@@ -5,6 +5,7 @@ import java.awt.*;
 @SuppressWarnings("serial")
 public class SetShips extends JFrame implements ActionListener, MouseListener{
 	//component declarations
+	//TODO
 	boolean isEntered = false;
 	JButton btnCarrier = new JButton("SET CARRIER");
 	JFrame setShips = new JFrame("");
@@ -613,6 +614,7 @@ public class SetShips extends JFrame implements ActionListener, MouseListener{
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				setBoat();
+				
 		}});
 		panel_1.addMouseListener(this);
 		panel_2.addMouseListener(this);
@@ -1032,6 +1034,7 @@ public class SetShips extends JFrame implements ActionListener, MouseListener{
 		}
 	else if(content.equals("proceed")){
 		//TODO PROCEED FXN
+		setVisible(false);
 		new InitializeGame().setVisible(true);;
 		JOptionPane.showMessageDialog(null, "Let the Game Begin! ");
 		JOptionPane.showMessageDialog(null, "Select a coordinate to begin your attack");
