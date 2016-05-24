@@ -612,75 +612,8 @@ public class SetShips extends JFrame implements ActionListener, MouseListener{
 		btnCarrier.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
-				String content = btnCarrier.getText().toLowerCase();;
-				if (content.equals("set carrier")){
-					if(isEntered){
-				JOptionPane.showMessageDialog(null, "AircraftCarrier SET");
-				JOptionPane.showMessageDialog(null, "Next, set the Battleship by selecting FOUR straight squares.");
-				btnCarrier.setText("SET BATTLESHIP");
-				isEntered = false;
-									}
-					else{
-						JOptionPane.showMessageDialog(null, "Please select the CARRIER position");
-						JOptionPane.showMessageDialog(null, "Set the CARRIER by selecting FIVE straight squares");
-					}
-					}
-				
-				else if(content.equals("set battleship")){
-					if(isEntered){
-					JOptionPane.showMessageDialog(null, "Battleship SET");
-					JOptionPane.showMessageDialog(null, "Next, set the DESTROYER by selecting THREE straight squares.");
-					btnCarrier.setText("SET DESTROYER");
-					isEntered = false;
-									}
-					else{
-						JOptionPane.showMessageDialog(null, "Please select the BATTLESHIP position");
-						JOptionPane.showMessageDialog(null, "Set the BATTLESHIP by selecting FOUR straight squares");
-					}
-					}
-			
-				else if(content.equals("set destroyer")){
-					if(isEntered){
-					JOptionPane.showMessageDialog(null, "Destroyer SET");
-					JOptionPane.showMessageDialog(null, "Next, set the FRIGATE by selecting TWO adjacent squares.");
-					btnCarrier.setText("SET FRIGATE");	
-					isEntered = false;			
-									}
-					else{
-						JOptionPane.showMessageDialog(null, "Please select the DESTROYER position");
-						JOptionPane.showMessageDialog(null, "Set the DESTROYER by selecting THREE straight squares");
-					}
-					}
-				else  if(content.equals("set frigate")){
-					if(isEntered){
-					JOptionPane.showMessageDialog(null, "Frigate SET");
-					JOptionPane.showMessageDialog(null, "Next, set the SUBMARINE by selecting ONE square.");
-					btnCarrier.setText("SET SUBMARINE");
-					isEntered = false;
-									}
-					else{
-						JOptionPane.showMessageDialog(null, "Please select the FRIGATE position");
-						JOptionPane.showMessageDialog(null, "Set the FRIGATE by selecting TWO squares");
-					}
-								
-								}
-				else if(content.equals("set submarine")){
-					if(isEntered){
-					JOptionPane.showMessageDialog(null, "SUBMARINE SET");
-					JOptionPane.showMessageDialog(null, "YOU ARE NOW READY FOR WAR!");
-					btnCarrier.setText("PROCEED");
-									}
-					else{
-						JOptionPane.showMessageDialog(null, "Please select the SUBMARINE position");
-						JOptionPane.showMessageDialog(null, "Set the SUBMARINE by selecting ONE square");
-					}
-					}
-				else if(content.equals("proceed")){
-					//TODO PROCEED FXN
-					//SHOW NEXT FRAME
-				}
-			}
-		});
+				setBoat();
+		}});
 		panel_1.addMouseListener(this);
 		panel_2.addMouseListener(this);
 		panel_3.addMouseListener(this);
@@ -1032,4 +965,76 @@ public class SetShips extends JFrame implements ActionListener, MouseListener{
 		// TODO Auto-generated method stub
 		
 	}
+	//TODO set ship fxn
+	public void setBoat(){
+	String content = btnCarrier.getText().toLowerCase();
+	if (content.equals("set carrier")){
+		if(isEntered){
+	JOptionPane.showMessageDialog(null, "AircraftCarrier SET");
+	JOptionPane.showMessageDialog(null, "Next, set the Battleship by selecting FOUR straight squares.");
+	btnCarrier.setText("SET BATTLESHIP");
+	isEntered = false;
+						}
+		else{
+			JOptionPane.showMessageDialog(null, "Please select the CARRIER position");
+			JOptionPane.showMessageDialog(null, "Set the CARRIER by selecting FIVE straight squares");
+		}
+		}
+	
+	else if(content.equals("set battleship")){
+		if(isEntered){
+		JOptionPane.showMessageDialog(null, "Battleship SET");
+		JOptionPane.showMessageDialog(null, "Next, set the DESTROYER by selecting THREE straight squares.");
+		btnCarrier.setText("SET DESTROYER");
+		isEntered = false;
+						}
+		else{
+			JOptionPane.showMessageDialog(null, "Please select the BATTLESHIP position");
+			JOptionPane.showMessageDialog(null, "Set the BATTLESHIP by selecting FOUR straight squares");
+		}
+		}
+
+	else if(content.equals("set destroyer")){
+		if(isEntered){
+		JOptionPane.showMessageDialog(null, "Destroyer SET");
+		JOptionPane.showMessageDialog(null, "Next, set the FRIGATE by selecting TWO adjacent squares.");
+		btnCarrier.setText("SET FRIGATE");	
+		isEntered = false;			
+						}
+		else{
+			JOptionPane.showMessageDialog(null, "Please select the DESTROYER position");
+			JOptionPane.showMessageDialog(null, "Set the DESTROYER by selecting THREE straight squares");
+		}
+		}
+	else  if(content.equals("set frigate")){
+		if(isEntered){
+		JOptionPane.showMessageDialog(null, "Frigate SET");
+		JOptionPane.showMessageDialog(null, "Next, set the SUBMARINE by selecting ONE square.");
+		btnCarrier.setText("SET SUBMARINE");
+		isEntered = false;
+						}
+		else{
+			JOptionPane.showMessageDialog(null, "Please select the FRIGATE position");
+			JOptionPane.showMessageDialog(null, "Set the FRIGATE by selecting TWO squares");
+		}
+					
+					}
+	else if(content.equals("set submarine")){
+		if(isEntered){
+		JOptionPane.showMessageDialog(null, "SUBMARINE SET");
+		JOptionPane.showMessageDialog(null, "YOU ARE NOW READY FOR WAR!");
+		btnCarrier.setText("PROCEED");
+						}
+		else{
+			JOptionPane.showMessageDialog(null, "Please select the SUBMARINE position");
+			JOptionPane.showMessageDialog(null, "Set the SUBMARINE by selecting ONE square");
+		}
+		}
+	else if(content.equals("proceed")){
+		//TODO PROCEED FXN
+		new InitializeGame().setVisible(true);;
+		JOptionPane.showMessageDialog(null, "Let the Game Begin! ");
+		JOptionPane.showMessageDialog(null, "Select a coordinate to begin your attack");
+	}
+}
 }
