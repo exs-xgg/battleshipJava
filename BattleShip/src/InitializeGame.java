@@ -861,29 +861,57 @@ public class InitializeGame extends JFrame implements ActionListener{
 	public void actionPerformed(ActionEvent e){
 		Object trigger = e.getSource();
 		//method cycle of death
-		if(checkEnemy(trigger)){
-			
+		if(isEnemyHit(trigger)){
+			hit(trigger);
 		}
 		else{
-			((JComponent) trigger).setBackground(black);
+			miss(trigger);
 		}
 		
 		
 		
 	}	
 	//TODO ENEMY PLACING GRID
-	public boolean checkEnemy(Object trigger){
-		return false;		
-	}
+	
 	//TODO hit fxn
+	
+	
+	public void miss(Object e){
+		((JComponent) e).setBackground(black);
+		JOptionPane.showMessageDialog(null, "It's a miss, General " + MainScreen.name1);
+		((JComponent) e).setEnabled(false);
+	}
+	
+	
 	public void hit(Object e){
 		score1 += 1;
 		((JComponent) e).setBackground(red);
 		String scoree = Integer.toString(score1);
 		myScore.setText(scoree);
 		JOptionPane.showMessageDialog(null, "It's a hit, General " + MainScreen.name1);
+		((JComponent) e).setEnabled(false);
 	}
-	public void setEnemyShips(){
+	
+	
+	public boolean isEnemyHit(Object trigger){
+	if ((trigger == button_5) || 
+			(trigger == button_6) || 
+			(trigger == button_7) || 
+			(trigger == button_18) ||
+			(trigger == button_20) ||
+			(trigger == button_21) ||
+			(trigger == button_22) ||
+			(trigger == button_23) ||
+			(trigger == button_26) ||
+			(trigger == button_34) ||
+			(trigger == button_39) ||
+			(trigger == button_40) ||
+			(trigger == button_42) ||
+			(trigger == button_44) ||
+			(trigger == button_50)){
+		return true;
+	}
+	else return false;
 	}
 }
 /**
