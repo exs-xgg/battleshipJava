@@ -8,9 +8,11 @@ public class SetShips extends JFrame implements ActionListener, MouseListener{
 	//TODO
 	boolean isEntered = false;
 	int count = 0;
-	public static String[] ships = new String[64];
+	public static JPanel[] ships = new JPanel[30];
 	public static int arrayAssist = 0;
 	Color black = new Color(0,0,0);
+
+	JLabel lblNewLabel = new JLabel("SETTING CARRIER");
 	JButton btnCarrier = new JButton("SET CARRIER");
 	JFrame setShips = new JFrame("");
 	JPanel panel_1 = new JPanel();
@@ -77,6 +79,7 @@ public class SetShips extends JFrame implements ActionListener, MouseListener{
 	JPanel panel_62 = new JPanel();
 	JPanel panel_63 = new JPanel();
 	JPanel panel_64 = new JPanel();
+	
 	//CONSTRUCTOR
 	//CONSTRUCTOR
 	//CONSTRUCTOR
@@ -533,8 +536,11 @@ public class SetShips extends JFrame implements ActionListener, MouseListener{
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				btnCarrier.setText("SET CARRIER");
+				lblNewLabel.setText("SETTING CARRIER");;
+				arrayAssist = 0;
 				count =0;
-				//resetArray();
+				//RESET FXN
+				resetArray();
 				panel_1.setBackground(new Color(0, 204, 255));
 				 panel_2.setBackground(new Color(0, 204, 255));
 				 panel_3.setBackground(new Color(0, 204, 255));
@@ -608,7 +614,6 @@ public class SetShips extends JFrame implements ActionListener, MouseListener{
 		btnReset.setBounds(419, 381, 104, 43);
 		getContentPane().add(btnReset);
 		
-		JLabel lblNewLabel = new JLabel("SET SHIP POSITIONS");
 		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNewLabel.setFont(new Font("Impact", Font.PLAIN, 20));
 		lblNewLabel.setBounds(95, 11, 268, 37);
@@ -1399,29 +1404,12 @@ public class SetShips extends JFrame implements ActionListener, MouseListener{
 			}
 		
 	}
-	public void mouseEntered(MouseEvent arg0) {
-		// TODO Auto-generated method stub
-		
-	}
-	public void mouseExited(MouseEvent arg0) {
-		// TODO Auto-generated method stub
-		
-	}
-	public void mousePressed(MouseEvent arg0) {
-		// TODO Auto-generated method stub
-		
-	}
-	public void mouseReleased(MouseEvent arg0) {
-		// TODO Auto-generated method stub
-		
-	}
+	public void mouseEntered(MouseEvent arg0) {}
+	public void mouseExited(MouseEvent arg0) {}
+	public void mousePressed(MouseEvent arg0) {}
+	public void mouseReleased(MouseEvent arg0) {}
+	public void actionPerformed(ActionEvent arg0) {}
 	
-	
-	//ACTION PERFORMES
-	public void actionPerformed(ActionEvent arg0) {
-		// TODO Auto-generated method stub
-		
-	}
 	//TODO set ship fxn
 	public void setBoat(){
 	String content = btnCarrier.getText().toLowerCase();
@@ -1432,6 +1420,7 @@ public class SetShips extends JFrame implements ActionListener, MouseListener{
 	btnCarrier.setText("SET BATTLESHIP");
 	isEntered = false;
 	count = 0;
+	lblNewLabel.setText("SETTING BATTLESHIP");
 						}
 		else{
 			JOptionPane.showMessageDialog(null, "Please select the CARRIER position");
@@ -1446,6 +1435,7 @@ public class SetShips extends JFrame implements ActionListener, MouseListener{
 		btnCarrier.setText("SET DESTROYER");
 		isEntered = false;
 		count = 0;
+		lblNewLabel.setText("SETTING DESTROYER");
 						}
 		else{
 			JOptionPane.showMessageDialog(null, "Please select the BATTLESHIP position");
@@ -1460,6 +1450,7 @@ public class SetShips extends JFrame implements ActionListener, MouseListener{
 		btnCarrier.setText("SET FRIGATE");	
 		isEntered = false;	
 		count = 0;
+		lblNewLabel.setText("SETTING FRIGATE");
 						}
 		else{
 			JOptionPane.showMessageDialog(null, "Please select the DESTROYER position");
@@ -1473,6 +1464,7 @@ public class SetShips extends JFrame implements ActionListener, MouseListener{
 		btnCarrier.setText("SET SUBMARINE");
 		isEntered = false;
 		count = 0;
+		lblNewLabel.setText("SETTING SUBMARINE");
 						}
 		else{
 			JOptionPane.showMessageDialog(null, "Please select the FRIGATE position");
@@ -1486,6 +1478,7 @@ public class SetShips extends JFrame implements ActionListener, MouseListener{
 		JOptionPane.showMessageDialog(null, "YOU ARE NOW READY FOR WAR!");
 		btnCarrier.setText("PROCEED");
 		count = 0;
+		lblNewLabel.setText("CLICK \"PROCEED\"");
 						}
 		else{
 			JOptionPane.showMessageDialog(null, "Please select the SUBMARINE position");
@@ -1494,10 +1487,12 @@ public class SetShips extends JFrame implements ActionListener, MouseListener{
 		}
 	else if(content.equals("proceed")){
 		//TODO PROCEED FXN
+		for(int x = 0; x < ships.length ; x++){
+			System.out.println(ships[x]);
+		}
 		setVisible(false);
 		new LoadingGame().setVisible(true);
-		//PLACE COORDINATES ON ARRAY
-		setShipArray();
+		//setShipArray();
 		new LoadingGame().setVisible(false);
 		JOptionPane.showMessageDialog(null, "Let the Game Begin! ");
 		new InitializeGame().setVisible(true);
@@ -1507,225 +1502,75 @@ public class SetShips extends JFrame implements ActionListener, MouseListener{
 	//TODO STRING ARRAY CLEAR
 	public void resetArray(){
 		for (int x = 0; x < ships.length; x++){
-			ships[x] = "";
+			ships[x] = null;
 		}
 	}
 	//TODO slector
-	public String selectObj(Object e){
-	if(panel_1 == e){ return "panel_1"; }
-	else if(panel_2 == e){ return "panel_2"; }
-	else if(panel_3 == e){ return "panel_3"; }
-	else if(panel_4 == e){ return "panel_4"; }
-	else if(panel_5 == e){ return "panel_5"; }
-	else if(panel_6 == e){ return "panel_6"; }
-	else if(panel_7 == e){ return "panel_7"; }
-	else if(panel_8 == e){ return "panel_8"; }
-	else if(panel_9 == e){ return "panel_9"; }
-	else if(panel_10 == e){ return "panel_10"; }
-	else if(panel_11 == e){ return "panel_11"; }
-	else if(panel_12 == e){ return "panel_12"; }
-	else if(panel_13 == e){ return "panel_13"; }
-	else if(panel_14 == e){ return "panel_14"; }
-	else if(panel_15 == e){ return "panel_15"; }
-	else if(panel_16 == e){ return "panel_16"; }
-	else if(panel_17 == e){ return "panel_17"; }
-	else if(panel_18 == e){ return "panel_18"; }
-	else if(panel_19 == e){ return "panel_19"; }
-	else if(panel_20 == e){ return "panel_20"; }
-	else if(panel_21 == e){ return "panel_21"; }
-	else if(panel_22 == e){ return "panel_22"; }
-	else if(panel_23 == e){ return "panel_23"; }
-	else if(panel_24 == e){ return "panel_24"; }
-	else if(panel_25 == e){ return "panel_25"; }
-	else if(panel_26 == e){ return "panel_26"; }
-	else if(panel_27 == e){ return "panel_27"; }
-	else if(panel_28 == e){ return "panel_28"; }
-	else if(panel_29 == e){ return "panel_29"; }
-	else if(panel_30 == e){ return "panel_30"; }
-	else if(panel_31 == e){ return "panel_31"; }
-	else if(panel_32 == e){ return "panel_32"; }
-	else if(panel_33 == e){ return "panel_33"; }
-	else if(panel_34 == e){ return "panel_34"; }
-	else if(panel_35 == e){ return "panel_35"; }
-	else if(panel_36 == e){ return "panel_36"; }
-	else if(panel_37 == e){ return "panel_37"; }
-	else if(panel_38 == e){ return "panel_38"; }
-	else if(panel_39 == e){ return "panel_39"; }
-	else if(panel_40 == e){ return "panel_40"; }
-	else if(panel_41 == e){ return "panel_41"; }
-	else if(panel_42 == e){ return "panel_42"; }
-	else if(panel_43 == e){ return "panel_43"; }
-	else if(panel_44 == e){ return "panel_44"; }
-	else if(panel_45 == e){ return "panel_45"; }
-	else if(panel_46 == e){ return "panel_46"; }
-	else if(panel_47 == e){ return "panel_47"; }
-	else if(panel_48 == e){ return "panel_48"; }
-	else if(panel_49 == e){ return "panel_49"; }
-	else if(panel_50 == e){ return "panel_50"; }
-	else if(panel_51 == e){ return "panel_51"; }
-	else if(panel_52 == e){ return "panel_52"; }
-	else if(panel_53 == e){ return "panel_53"; }
-	else if(panel_54 == e){ return "panel_54"; }
-	else if(panel_55 == e){ return "panel_55"; }
-	else if(panel_56 == e){ return "panel_56"; }
-	else if(panel_57 == e){ return "panel_57"; }
-	else if(panel_58 == e){ return "panel_58"; }
-	else if(panel_59 == e){ return "panel_59"; }
-	else if(panel_60 == e){ return "panel_60"; }
-	else if(panel_61 == e){ return "panel_61"; }
-	else if(panel_62 == e){ return "panel_62"; }
-	else if(panel_63 == e){ return "panel_63"; }
-	else if(panel_64 == e){ return "panel_64"; }
-	else return "";
-	}
-	//TODO shawll we scrap this????
-	public void setShipArray(){
-		arrayAssist = 0;
-		for(int x = 0; x < ships.length; x++){
-			if(panel_1.getBackground() == black){
-				
-			}
-			else if(panel_2.getBackground() == black){
-				
-			}
-			else if(panel_3.getBackground() == black){
-				
-			}
-			else if(panel_4.getBackground() == black){
-				
-			}
-			else if(panel_5.getBackground() == black){}
-			else if(panel_6.getBackground() == black){}
-			else if(panel_7.getBackground() == black){}
-			else if(panel_8.getBackground() == black){}
-			else if(panel_9.getBackground() == black){}
-			else if(panel_10.getBackground() == black){}
-			else if(panel_11.getBackground() == black){}
-			else if(panel_12.getBackground() == black){}
-			else if(panel_13.getBackground() == black){}
-			else if(panel_14.getBackground() == black){}
-			else if(panel_15.getBackground() == black){}
-			else if(panel_16.getBackground() == black){}
-			else if(panel_17.getBackground() == black){}
-			else if(panel_18.getBackground() == black){}
-			else if(panel_19.getBackground() == black){}
-			else if(panel_20.getBackground() == black){}
-			else if(panel_21.getBackground() == black){}
-			else if(panel_22.getBackground() == black){}
-			else if(panel_23.getBackground() == black){}
-			else if(panel_24.getBackground() == black){}
-			else if(panel_25.getBackground() == black){}
-			else if(panel_26.getBackground() == black){}
-			else if(panel_27.getBackground() == black){}
-			else if(panel_28.getBackground() == black){}
-			else if(panel_29.getBackground() == black){
-				
-			}
-			else if(panel_30.getBackground() == black){
-				
-			}
-			else if(panel_31.getBackground() == black){
-				
-			}
-			else if(panel_32.getBackground() == black){
-				
-			}
-			else if(panel_33.getBackground() == black){
-				
-			}
-			else if(panel_34.getBackground() == black){
-				
-			}
-			else if(panel_35.getBackground() == black){
-				
-			}
-			else if(panel_36.getBackground() == black){
-				
-			}
-			else if(panel_37.getBackground() == black){
-				
-			}
-			else if(panel_38.getBackground() == black){
-				
-			}
-			else if(panel_39.getBackground() == black){
-				
-			}
-			else if(panel_40.getBackground() == black){
-				
-			}
-			else if(panel_41.getBackground() == black){
-				
-			}
-			else if(panel_42.getBackground() == black){
-				
-			}
-			else if(panel_43.getBackground() == black){
-				
-			}
-			else if(panel_44.getBackground() == black){
-				
-			}
-			else if(panel_45.getBackground() == black){
-				
-			}
-			else if(panel_46.getBackground() == black){
-				
-			}
-			else if(panel_47.getBackground() == black){
-				
-			}
-			else if(panel_48.getBackground() == black){
-				
-			}
-			else if(panel_49.getBackground() == black){
-				
-			}
-			else if(panel_50.getBackground() == black){
-				
-			}
-			else if(panel_51.getBackground() == black){
-				
-			}
-			else if(panel_52.getBackground() == black){
-				
-			}
-			else if(panel_53.getBackground() == black){
-				
-			}
-			else if(panel_54.getBackground() == black){
-				
-			}
-			else if(panel_55.getBackground() == black){
-				
-			}
-			else if(panel_56.getBackground() == black){
-				
-			}
-			else if(panel_57.getBackground() == black){
-				
-			}
-			else if(panel_58.getBackground() == black){
-				
-			}
-			else if(panel_59.getBackground() == black){
-				
-			}
-			else if(panel_60.getBackground() == black){
-				
-			}
-			else if(panel_61.getBackground() == black){
-				
-			}
-			else if(panel_62.getBackground() == black){
-				
-			}
-			else if(panel_63.getBackground() == black){
-				
-			}
-			else if(panel_64.getBackground() == black){
-				
-			}
-		}
+	public JPanel selectObj(Object e){
+	if(panel_1 == e){ return panel_1; }
+	else if(panel_2 == e){ return panel_2; }
+	else if(panel_3 == e){ return panel_3; }
+	else if(panel_4 == e){ return panel_4; }
+	else if(panel_5 == e){ return panel_5; }
+	else if(panel_6 == e){ return panel_6; }
+	else if(panel_7 == e){ return panel_7; }
+	else if(panel_8 == e){ return panel_8; }
+	else if(panel_9 == e){ return panel_9; }
+	else if(panel_10 == e){ return panel_10; }
+	else if(panel_11 == e){ return panel_11; }
+	else if(panel_12 == e){ return panel_12; }
+	else if(panel_13 == e){ return panel_13; }
+	else if(panel_14 == e){ return panel_14; }
+	else if(panel_15 == e){ return panel_15; }
+	else if(panel_16 == e){ return panel_16; }
+	else if(panel_17 == e){ return panel_17; }
+	else if(panel_18 == e){ return panel_18; }
+	else if(panel_19 == e){ return panel_19; }
+	else if(panel_20 == e){ return panel_20; }
+	else if(panel_21 == e){ return panel_21; }
+	else if(panel_22 == e){ return panel_22; }
+	else if(panel_23 == e){ return panel_23; }
+	else if(panel_24 == e){ return panel_24; }
+	else if(panel_25 == e){ return panel_25; }
+	else if(panel_26 == e){ return panel_26; }
+	else if(panel_27 == e){ return panel_27; }
+	else if(panel_28 == e){ return panel_28; }
+	else if(panel_29 == e){ return panel_29; }
+	else if(panel_30 == e){ return panel_30; }
+	else if(panel_31 == e){ return panel_31; }
+	else if(panel_32 == e){ return panel_32; }
+	else if(panel_33 == e){ return panel_33; }
+	else if(panel_34 == e){ return panel_34; }
+	else if(panel_35 == e){ return panel_35; }
+	else if(panel_36 == e){ return panel_36; }
+	else if(panel_37 == e){ return panel_37; }
+	else if(panel_38 == e){ return panel_38; }
+	else if(panel_39 == e){ return panel_39; }
+	else if(panel_40 == e){ return panel_40; }
+	else if(panel_41 == e){ return panel_41; }
+	else if(panel_42 == e){ return panel_42; }
+	else if(panel_43 == e){ return panel_43; }
+	else if(panel_44 == e){ return panel_44; }
+	else if(panel_45 == e){ return panel_45; }
+	else if(panel_46 == e){ return panel_46; }
+	else if(panel_47 == e){ return panel_47; }
+	else if(panel_48 == e){ return panel_48; }
+	else if(panel_49 == e){ return panel_49; }
+	else if(panel_50 == e){ return panel_50; }
+	else if(panel_51 == e){ return panel_51; }
+	else if(panel_52 == e){ return panel_52; }
+	else if(panel_53 == e){ return panel_53; }
+	else if(panel_54 == e){ return panel_54; }
+	else if(panel_55 == e){ return panel_55; }
+	else if(panel_56 == e){ return panel_56; }
+	else if(panel_57 == e){ return panel_57; }
+	else if(panel_58 == e){ return panel_58; }
+	else if(panel_59 == e){ return panel_59; }
+	else if(panel_60 == e){ return panel_60; }
+	else if(panel_61 == e){ return panel_61; }
+	else if(panel_62 == e){ return panel_62; }
+	else if(panel_63 == e){ return panel_63; }
+	else if(panel_64 == e){ return panel_64; }
+	else return null;
 	}
 }
