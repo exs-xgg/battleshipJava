@@ -700,14 +700,18 @@ public class SetShips extends JFrame implements ActionListener, MouseListener{
 		Object e = arg0.getSource();
 		if (e == panel_1){
 			if(SwingUtilities.isLeftMouseButton(arg0)){
+				if (panel_1.getBackground() == (black)){
+					JOptionPane.showMessageDialog(null, "You cant select the same coordinate TWICE!");
+				}
+				else{
 				((JComponent) e).setBackground(new Color(0,0,0));
-			
 				count += 1;				
 				isEntered = true;
 				ships[arrayAssist] = selectObj(e);
-				JOptionPane.showMessageDialog(null, ships[arrayAssist]);
+				JOptionPane.showMessageDialog(null, "xx"+ships[arrayAssist]);
 				arrayAssist += 1;
 			}
+				}
 			}
 		else if (e == panel_2  ){
 			if(SwingUtilities.isLeftMouseButton(arg0)){
