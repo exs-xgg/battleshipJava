@@ -12,5 +12,5 @@ public class Mainclass extends JFrame{
 		x.setVisible(true);
 		
 	}
-
+	
 }

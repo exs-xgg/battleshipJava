@@ -8,6 +8,9 @@ public class SetShips extends JFrame implements ActionListener, MouseListener{
 	//TODO
 	boolean isEntered = false;
 	int count = 0;
+	public static String[] ships = new String[64];
+	public static int arrayAssist = 0;
+	Color black = new Color(0,0,0);
 	JButton btnCarrier = new JButton("SET CARRIER");
 	JFrame setShips = new JFrame("");
 	JPanel panel_1 = new JPanel();
@@ -82,10 +85,11 @@ public class SetShips extends JFrame implements ActionListener, MouseListener{
 		setVisible(true);
 		setResizable(false);
 		setSize(619,520);
-		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setLocationRelativeTo(null);
 		//TODO constructor area 
-		
+		//reset array
+		resetArray();
 		//LABELS AND ADJUSTMENTS
 		JLabel lblA = new JLabel("A   B   C   D   E   F    G   H ");
 		lblA.setHorizontalAlignment(SwingConstants.CENTER);
@@ -530,6 +534,7 @@ public class SetShips extends JFrame implements ActionListener, MouseListener{
 			public void actionPerformed(ActionEvent arg0) {
 				btnCarrier.setText("SET CARRIER");
 				count =0;
+				//resetArray();
 				panel_1.setBackground(new Color(0, 204, 255));
 				 panel_2.setBackground(new Color(0, 204, 255));
 				 panel_3.setBackground(new Color(0, 204, 255));
@@ -689,262 +694,710 @@ public class SetShips extends JFrame implements ActionListener, MouseListener{
 	public void mouseClicked(MouseEvent arg0) {
 		Object e = arg0.getSource();
 		if (e == panel_1){
-			((JComponent) e).setBackground(new Color(0,0,0));
-			isEntered = true;
-		}
+			if(SwingUtilities.isLeftMouseButton(arg0)){
+				((JComponent) e).setBackground(new Color(0,0,0));
+			
+				count += 1;				
+				isEntered = true;
+				ships[arrayAssist] = selectObj(e);
+				JOptionPane.showMessageDialog(null, ships[arrayAssist]);
+				arrayAssist += 1;
+			}
+			}
 		else if (e == panel_2  ){
-			((JComponent) e).setBackground(new Color(0,0,0));
-			isEntered = true;
+			if(SwingUtilities.isLeftMouseButton(arg0)){
+				((JComponent) e).setBackground(new Color(0,0,0));
+			
+				count += 1;				
+				isEntered = true;
+				ships[arrayAssist] = selectObj(e);
+				JOptionPane.showMessageDialog(null, ships[arrayAssist]);
+				arrayAssist += 1;
+			}
 			}
 		else if (e == panel_3  ){
-			((JComponent) e).setBackground(new Color(0,0,0));
-			isEntered = true;
+			if(SwingUtilities.isLeftMouseButton(arg0)){
+				((JComponent) e).setBackground(new Color(0,0,0));
+			
+				count += 1;				
+				isEntered = true;
+				ships[arrayAssist] = selectObj(e);
+				JOptionPane.showMessageDialog(null, ships[arrayAssist]);
+				arrayAssist += 1;
+			}
 			}
 		else if (e == panel_4  ){
-			((JComponent) e).setBackground(new Color(0,0,0));
-			isEntered = true;
+			if(SwingUtilities.isLeftMouseButton(arg0)){
+				((JComponent) e).setBackground(new Color(0,0,0));
+			
+				count += 1;				
+				isEntered = true;
+				ships[arrayAssist] = selectObj(e);
+				JOptionPane.showMessageDialog(null, ships[arrayAssist]);
+				arrayAssist += 1;
+			}
 			}
 		else if (e == panel_5  ){
-			((JComponent) e).setBackground(new Color(0,0,0));
-			isEntered = true;
+			if(SwingUtilities.isLeftMouseButton(arg0)){
+				((JComponent) e).setBackground(new Color(0,0,0));
+			
+				count += 1;				
+				isEntered = true;
+				ships[arrayAssist] = selectObj(e);
+				JOptionPane.showMessageDialog(null, ships[arrayAssist]);
+				arrayAssist += 1;
+			}
 			}
 		else if (e == panel_6  ){
-			((JComponent) e).setBackground(new Color(0,0,0));
-			isEntered = true;
+			if(SwingUtilities.isLeftMouseButton(arg0)){
+				((JComponent) e).setBackground(new Color(0,0,0));
+			
+				count += 1;				
+				isEntered = true;
+				ships[arrayAssist] = selectObj(e);
+				JOptionPane.showMessageDialog(null, ships[arrayAssist]);
+				arrayAssist += 1;
+			}
 			}
 		else if (e == panel_7  ){
-			((JComponent) e).setBackground(new Color(0,0,0));
-			isEntered = true;
+			if(SwingUtilities.isLeftMouseButton(arg0)){
+				((JComponent) e).setBackground(new Color(0,0,0));
+			
+				count += 1;				
+				isEntered = true;
+				ships[arrayAssist] = selectObj(e);
+				JOptionPane.showMessageDialog(null, ships[arrayAssist]);
+				arrayAssist += 1;
+			}
 			}
 		else if (e == panel_8  ){
-			((JComponent) e).setBackground(new Color(0,0,0));
-			isEntered = true;
+			if(SwingUtilities.isLeftMouseButton(arg0)){
+				((JComponent) e).setBackground(new Color(0,0,0));
+			
+				count += 1;				
+				isEntered = true;
+				ships[arrayAssist] = selectObj(e);
+				JOptionPane.showMessageDialog(null, ships[arrayAssist]);
+				arrayAssist += 1;
+			}
 			}
 		else if (e == panel_9  ){
-			((JComponent) e).setBackground(new Color(0,0,0));
-			isEntered = true;
+			if(SwingUtilities.isLeftMouseButton(arg0)){
+				((JComponent) e).setBackground(new Color(0,0,0));
+			
+				count += 1;				
+				isEntered = true;
+				ships[arrayAssist] = selectObj(e);
+				JOptionPane.showMessageDialog(null, ships[arrayAssist]);
+				arrayAssist += 1;
+			}
 			}
 		else if (e == panel_10  ){
-			((JComponent) e).setBackground(new Color(0,0,0));
-			isEntered = true;
+			if(SwingUtilities.isLeftMouseButton(arg0)){
+				((JComponent) e).setBackground(new Color(0,0,0));
+			
+				count += 1;				
+				isEntered = true;
+				ships[arrayAssist] = selectObj(e);
+				JOptionPane.showMessageDialog(null, ships[arrayAssist]);
+				arrayAssist += 1;
+			}
 			}
 		else if (e == panel_11  ){
-			((JComponent) e).setBackground(new Color(0,0,0));
-			isEntered = true;
+			if(SwingUtilities.isLeftMouseButton(arg0)){
+				((JComponent) e).setBackground(new Color(0,0,0));
+			
+				count += 1;				
+				isEntered = true;
+				ships[arrayAssist] = selectObj(e);
+				JOptionPane.showMessageDialog(null, ships[arrayAssist]);
+				arrayAssist += 1;
+			}
 			}
 		else if (e == panel_12  ){
-			((JComponent) e).setBackground(new Color(0,0,0));
-			isEntered = true;
+			if(SwingUtilities.isLeftMouseButton(arg0)){
+				((JComponent) e).setBackground(new Color(0,0,0));
+			
+				count += 1;				
+				isEntered = true;
+				ships[arrayAssist] = selectObj(e);
+				JOptionPane.showMessageDialog(null, ships[arrayAssist]);
+				arrayAssist += 1;
+			}
 			}
 		else if (e == panel_13  ){
-			((JComponent) e).setBackground(new Color(0,0,0));
-			isEntered = true;
+			if(SwingUtilities.isLeftMouseButton(arg0)){
+				((JComponent) e).setBackground(new Color(0,0,0));
+			
+				count += 1;				
+				isEntered = true;
+				ships[arrayAssist] = selectObj(e);
+				JOptionPane.showMessageDialog(null, ships[arrayAssist]);
+				arrayAssist += 1;
+			}
 			}
 		else if (e == panel_14  ){
-			((JComponent) e).setBackground(new Color(0,0,0));
-			isEntered = true;
+			if(SwingUtilities.isLeftMouseButton(arg0)){
+				((JComponent) e).setBackground(new Color(0,0,0));
+			
+				count += 1;				
+				isEntered = true;
+				ships[arrayAssist] = selectObj(e);
+				JOptionPane.showMessageDialog(null, ships[arrayAssist]);
+				arrayAssist += 1;
+			}
 			}
 		else if (e == panel_15  ){
-			((JComponent) e).setBackground(new Color(0,0,0));
-			isEntered = true;
+			if(SwingUtilities.isLeftMouseButton(arg0)){
+				((JComponent) e).setBackground(new Color(0,0,0));
+			
+				count += 1;				
+				isEntered = true;
+				ships[arrayAssist] = selectObj(e);
+				JOptionPane.showMessageDialog(null, ships[arrayAssist]);
+				arrayAssist += 1;
+			}
 			}
 		else if (e == panel_16  ){
-			((JComponent) e).setBackground(new Color(0,0,0));
-			isEntered = true;
+			if(SwingUtilities.isLeftMouseButton(arg0)){
+				((JComponent) e).setBackground(new Color(0,0,0));
+			
+				count += 1;				
+				isEntered = true;
+				ships[arrayAssist] = selectObj(e);
+				JOptionPane.showMessageDialog(null, ships[arrayAssist]);
+				arrayAssist += 1;
+			}
 			}
 		else if (e == panel_17  ){
-			((JComponent) e).setBackground(new Color(0,0,0));
-			isEntered = true;
+			if(SwingUtilities.isLeftMouseButton(arg0)){
+				((JComponent) e).setBackground(new Color(0,0,0));
+			
+				count += 1;				
+				isEntered = true;
+				ships[arrayAssist] = selectObj(e);
+				JOptionPane.showMessageDialog(null, ships[arrayAssist]);
+				arrayAssist += 1;
+			}
 			}
 		else if (e == panel_18  ){
-			((JComponent) e).setBackground(new Color(0,0,0));
-			isEntered = true;
+			if(SwingUtilities.isLeftMouseButton(arg0)){
+				((JComponent) e).setBackground(new Color(0,0,0));
+			
+				count += 1;				
+				isEntered = true;
+				ships[arrayAssist] = selectObj(e);
+				JOptionPane.showMessageDialog(null, ships[arrayAssist]);
+				arrayAssist += 1;
+			}
 			}
 		else if (e == panel_19  ){
-			((JComponent) e).setBackground(new Color(0,0,0));
-			isEntered = true;
+			if(SwingUtilities.isLeftMouseButton(arg0)){
+				((JComponent) e).setBackground(new Color(0,0,0));
+			
+				count += 1;				
+				isEntered = true;
+				ships[arrayAssist] = selectObj(e);
+				JOptionPane.showMessageDialog(null, ships[arrayAssist]);
+				arrayAssist += 1;
+			}
 			}
 		else if (e == panel_20  ){
-			((JComponent) e).setBackground(new Color(0,0,0));
-			isEntered = true;
+			if(SwingUtilities.isLeftMouseButton(arg0)){
+				((JComponent) e).setBackground(new Color(0,0,0));
+			
+				count += 1;				
+				isEntered = true;
+				ships[arrayAssist] = selectObj(e);
+				JOptionPane.showMessageDialog(null, ships[arrayAssist]);
+				arrayAssist += 1;
+			}
 			}
 		else if (e == panel_21  ){
-			((JComponent) e).setBackground(new Color(0,0,0));
-			isEntered = true;
+			if(SwingUtilities.isLeftMouseButton(arg0)){
+				((JComponent) e).setBackground(new Color(0,0,0));
+			
+				count += 1;				
+				isEntered = true;
+				ships[arrayAssist] = selectObj(e);
+				JOptionPane.showMessageDialog(null, ships[arrayAssist]);
+				arrayAssist += 1;
+			}
 			}
 		else if (e == panel_22  ){
-			((JComponent) e).setBackground(new Color(0,0,0));
-			isEntered = true;
+			if(SwingUtilities.isLeftMouseButton(arg0)){
+				((JComponent) e).setBackground(new Color(0,0,0));
+			
+				count += 1;				
+				isEntered = true;
+				ships[arrayAssist] = selectObj(e);
+				JOptionPane.showMessageDialog(null, ships[arrayAssist]);
+				arrayAssist += 1;
+			}
 			}
 		else if (e == panel_23  ){
-			((JComponent) e).setBackground(new Color(0,0,0));
-			isEntered = true;
+			if(SwingUtilities.isLeftMouseButton(arg0)){
+				((JComponent) e).setBackground(new Color(0,0,0));
+			
+				count += 1;				
+				isEntered = true;
+				ships[arrayAssist] = selectObj(e);
+				JOptionPane.showMessageDialog(null, ships[arrayAssist]);
+				arrayAssist += 1;
+			}
 			}
 		else if (e == panel_24  ){
-			((JComponent) e).setBackground(new Color(0,0,0));
-			isEntered = true;
+			if(SwingUtilities.isLeftMouseButton(arg0)){
+				((JComponent) e).setBackground(new Color(0,0,0));
+			
+				count += 1;				
+				isEntered = true;
+				ships[arrayAssist] = selectObj(e);
+				JOptionPane.showMessageDialog(null, ships[arrayAssist]);
+				arrayAssist += 1;
+			}
 			}
 		else if (e == panel_25  ){
-			((JComponent) e).setBackground(new Color(0,0,0));
-			isEntered = true;
+			if(SwingUtilities.isLeftMouseButton(arg0)){
+				((JComponent) e).setBackground(new Color(0,0,0));
+			
+				count += 1;				
+				isEntered = true;
+				ships[arrayAssist] = selectObj(e);
+				JOptionPane.showMessageDialog(null, ships[arrayAssist]);
+				arrayAssist += 1;
+			}
 			}
 		else if (e == panel_26  ){
-			((JComponent) e).setBackground(new Color(0,0,0));
-			isEntered = true;
+			if(SwingUtilities.isLeftMouseButton(arg0)){
+				((JComponent) e).setBackground(new Color(0,0,0));
+			
+				count += 1;				
+				isEntered = true;
+				ships[arrayAssist] = selectObj(e);
+				JOptionPane.showMessageDialog(null, ships[arrayAssist]);
+				arrayAssist += 1;
+			}
 			}
 		else if (e == panel_27  ){
-			((JComponent) e).setBackground(new Color(0,0,0));
-			isEntered = true;
+			if(SwingUtilities.isLeftMouseButton(arg0)){
+				((JComponent) e).setBackground(new Color(0,0,0));
+			
+				count += 1;				
+				isEntered = true;
+				ships[arrayAssist] = selectObj(e);
+				JOptionPane.showMessageDialog(null, ships[arrayAssist]);
+				arrayAssist += 1;
+			}
 			}
 		else if (e == panel_28  ){
-			((JComponent) e).setBackground(new Color(0,0,0));
-			isEntered = true;
+			if(SwingUtilities.isLeftMouseButton(arg0)){
+				((JComponent) e).setBackground(new Color(0,0,0));
+			
+				count += 1;				
+				isEntered = true;
+				ships[arrayAssist] = selectObj(e);
+				JOptionPane.showMessageDialog(null, ships[arrayAssist]);
+				arrayAssist += 1;
+			}
 			}
 		else if (e == panel_29  ){
-			((JComponent) e).setBackground(new Color(0,0,0));
-			isEntered = true;
+			if(SwingUtilities.isLeftMouseButton(arg0)){
+				((JComponent) e).setBackground(new Color(0,0,0));
+			
+				count += 1;				
+				isEntered = true;
+				ships[arrayAssist] = selectObj(e);
+				JOptionPane.showMessageDialog(null, ships[arrayAssist]);
+				arrayAssist += 1;
+			}
 			}
 		else if (e == panel_30  ){
-			((JComponent) e).setBackground(new Color(0,0,0));
-			isEntered = true;
+			if(SwingUtilities.isLeftMouseButton(arg0)){
+				((JComponent) e).setBackground(new Color(0,0,0));
+			
+				count += 1;				
+				isEntered = true;
+				ships[arrayAssist] = selectObj(e);
+				JOptionPane.showMessageDialog(null, ships[arrayAssist]);
+				arrayAssist += 1;
+			}
 			}
 		else if (e == panel_31  ){
-			((JComponent) e).setBackground(new Color(0,0,0));
-			isEntered = true;
+			if(SwingUtilities.isLeftMouseButton(arg0)){
+				((JComponent) e).setBackground(new Color(0,0,0));
+			
+				count += 1;				
+				isEntered = true;
+				ships[arrayAssist] = selectObj(e);
+				JOptionPane.showMessageDialog(null, ships[arrayAssist]);
+				arrayAssist += 1;
+			}
 			}
 		else if (e == panel_32  ){
-			((JComponent) e).setBackground(new Color(0,0,0));
-			isEntered = true;
+			if(SwingUtilities.isLeftMouseButton(arg0)){
+				((JComponent) e).setBackground(new Color(0,0,0));
+			
+				count += 1;				
+				isEntered = true;
+				ships[arrayAssist] = selectObj(e);
+				JOptionPane.showMessageDialog(null, ships[arrayAssist]);
+				arrayAssist += 1;
+			}
 			}
 		else if (e == panel_33  ){
-			((JComponent) e).setBackground(new Color(0,0,0));
-			isEntered = true;
+			if(SwingUtilities.isLeftMouseButton(arg0)){
+				((JComponent) e).setBackground(new Color(0,0,0));
+			
+				count += 1;				
+				isEntered = true;
+				ships[arrayAssist] = selectObj(e);
+				JOptionPane.showMessageDialog(null, ships[arrayAssist]);
+				arrayAssist += 1;
+			}
 			}
 		else if (e == panel_34  ){
-			((JComponent) e).setBackground(new Color(0,0,0));
-			isEntered = true;
+			if(SwingUtilities.isLeftMouseButton(arg0)){
+				((JComponent) e).setBackground(new Color(0,0,0));
+			
+				count += 1;				
+				isEntered = true;
+				ships[arrayAssist] = selectObj(e);
+				JOptionPane.showMessageDialog(null, ships[arrayAssist]);
+				arrayAssist += 1;
+			}
 			}
 		else if (e == panel_35  ){
-			((JComponent) e).setBackground(new Color(0,0,0));
-			isEntered = true;
+			if(SwingUtilities.isLeftMouseButton(arg0)){
+				((JComponent) e).setBackground(new Color(0,0,0));
+			
+				count += 1;				
+				isEntered = true;
+				ships[arrayAssist] = selectObj(e);
+				JOptionPane.showMessageDialog(null, ships[arrayAssist]);
+				arrayAssist += 1;
+			}
 			}
 		else if (e == panel_36  ){
-			((JComponent) e).setBackground(new Color(0,0,0));
-			isEntered = true;
+			if(SwingUtilities.isLeftMouseButton(arg0)){
+				((JComponent) e).setBackground(new Color(0,0,0));
+			
+				count += 1;				
+				isEntered = true;
+				ships[arrayAssist] = selectObj(e);
+				JOptionPane.showMessageDialog(null, ships[arrayAssist]);
+				arrayAssist += 1;
+			}
 			}
 		else if (e == panel_37  ){
-			((JComponent) e).setBackground(new Color(0,0,0));
-			isEntered = true;
+			if(SwingUtilities.isLeftMouseButton(arg0)){
+				((JComponent) e).setBackground(new Color(0,0,0));
+			
+				count += 1;				
+				isEntered = true;
+				ships[arrayAssist] = selectObj(e);
+				JOptionPane.showMessageDialog(null, ships[arrayAssist]);
+				arrayAssist += 1;
+			}
 			}
 		else if (e == panel_38  ){
-			((JComponent) e).setBackground(new Color(0,0,0));
-			isEntered = true;
+			if(SwingUtilities.isLeftMouseButton(arg0)){
+				((JComponent) e).setBackground(new Color(0,0,0));
+			
+				count += 1;				
+				isEntered = true;
+				ships[arrayAssist] = selectObj(e);
+				JOptionPane.showMessageDialog(null, ships[arrayAssist]);
+				arrayAssist += 1;
+			}
 			}
 		else if (e == panel_39  ){
-			((JComponent) e).setBackground(new Color(0,0,0));
-			isEntered = true;
+			if(SwingUtilities.isLeftMouseButton(arg0)){
+				((JComponent) e).setBackground(new Color(0,0,0));
+			
+				count += 1;				
+				isEntered = true;
+				ships[arrayAssist] = selectObj(e);
+				JOptionPane.showMessageDialog(null, ships[arrayAssist]);
+				arrayAssist += 1;
+			}
 			}
 		else if (e == panel_40  ){
-			((JComponent) e).setBackground(new Color(0,0,0));
-			isEntered = true;
+			if(SwingUtilities.isLeftMouseButton(arg0)){
+				((JComponent) e).setBackground(new Color(0,0,0));
+			
+				count += 1;				
+				isEntered = true;
+				ships[arrayAssist] = selectObj(e);
+				JOptionPane.showMessageDialog(null, ships[arrayAssist]);
+				arrayAssist += 1;
+			}
 			}
 		else if (e == panel_41  ){
-			((JComponent) e).setBackground(new Color(0,0,0));
-			isEntered = true;
+			if(SwingUtilities.isLeftMouseButton(arg0)){
+				((JComponent) e).setBackground(new Color(0,0,0));
+			
+				count += 1;				
+				isEntered = true;
+				ships[arrayAssist] = selectObj(e);
+				JOptionPane.showMessageDialog(null, ships[arrayAssist]);
+				arrayAssist += 1;
+			}
 			}
 		else if (e == panel_42  ){
-			((JComponent) e).setBackground(new Color(0,0,0));
-			isEntered = true;
+			if(SwingUtilities.isLeftMouseButton(arg0)){
+				((JComponent) e).setBackground(new Color(0,0,0));
+			
+				count += 1;				
+				isEntered = true;
+				ships[arrayAssist] = selectObj(e);
+				JOptionPane.showMessageDialog(null, ships[arrayAssist]);
+				arrayAssist += 1;
+			}
 			}
 		else if (e == panel_43  ){
-			((JComponent) e).setBackground(new Color(0,0,0));
-			isEntered = true;
+			if(SwingUtilities.isLeftMouseButton(arg0)){
+				((JComponent) e).setBackground(new Color(0,0,0));
+			
+				count += 1;				
+				isEntered = true;
+				ships[arrayAssist] = selectObj(e);
+				JOptionPane.showMessageDialog(null, ships[arrayAssist]);
+				arrayAssist += 1;
+			}
 			}
 		else if (e == panel_44  ){
-			((JComponent) e).setBackground(new Color(0,0,0));
-			isEntered = true;
+			if(SwingUtilities.isLeftMouseButton(arg0)){
+				((JComponent) e).setBackground(new Color(0,0,0));
+			
+				count += 1;				
+				isEntered = true;
+				ships[arrayAssist] = selectObj(e);
+				JOptionPane.showMessageDialog(null, ships[arrayAssist]);
+				arrayAssist += 1;
+			}
 			}
 		else if (e == panel_45  ){
-			((JComponent) e).setBackground(new Color(0,0,0));
-			isEntered = true;
+			if(SwingUtilities.isLeftMouseButton(arg0)){
+				((JComponent) e).setBackground(new Color(0,0,0));
+			
+				count += 1;				
+				isEntered = true;
+				ships[arrayAssist] = selectObj(e);
+				JOptionPane.showMessageDialog(null, ships[arrayAssist]);
+				arrayAssist += 1;
+			}
 			}
 		else if (e == panel_46  ){
-			((JComponent) e).setBackground(new Color(0,0,0));
-			isEntered = true;
+			if(SwingUtilities.isLeftMouseButton(arg0)){
+				((JComponent) e).setBackground(new Color(0,0,0));
+			
+				count += 1;				
+				isEntered = true;
+				ships[arrayAssist] = selectObj(e);
+				JOptionPane.showMessageDialog(null, ships[arrayAssist]);
+				arrayAssist += 1;
+			}
 			}
 		else if (e == panel_47  ){
-			((JComponent) e).setBackground(new Color(0,0,0));
-			isEntered = true;
+			if(SwingUtilities.isLeftMouseButton(arg0)){
+				((JComponent) e).setBackground(new Color(0,0,0));
+			
+				count += 1;				
+				isEntered = true;
+				ships[arrayAssist] = selectObj(e);
+				JOptionPane.showMessageDialog(null, ships[arrayAssist]);
+				arrayAssist += 1;
+			}
 			}
 		else if (e == panel_48  ){
-			((JComponent) e).setBackground(new Color(0,0,0));
-			isEntered = true;
+			if(SwingUtilities.isLeftMouseButton(arg0)){
+				((JComponent) e).setBackground(new Color(0,0,0));
+			
+				count += 1;				
+				isEntered = true;
+				ships[arrayAssist] = selectObj(e);
+				JOptionPane.showMessageDialog(null, ships[arrayAssist]);
+				arrayAssist += 1;
+			}
 			}
 		else if (e == panel_49  ){
-			((JComponent) e).setBackground(new Color(0,0,0));
-			isEntered = true;
+			if(SwingUtilities.isLeftMouseButton(arg0)){
+				((JComponent) e).setBackground(new Color(0,0,0));
+			
+				count += 1;				
+				isEntered = true;
+				ships[arrayAssist] = selectObj(e);
+				JOptionPane.showMessageDialog(null, ships[arrayAssist]);
+				arrayAssist += 1;
+			}
 			}
 		else if (e == panel_50  ){
-			((JComponent) e).setBackground(new Color(0,0,0));
-			isEntered = true;
+			if(SwingUtilities.isLeftMouseButton(arg0)){
+				((JComponent) e).setBackground(new Color(0,0,0));
+			
+				count += 1;				
+				isEntered = true;
+				ships[arrayAssist] = selectObj(e);
+				JOptionPane.showMessageDialog(null, ships[arrayAssist]);
+				arrayAssist += 1;
+			}
 			}
 		else if (e == panel_51  ){
-			((JComponent) e).setBackground(new Color(0,0,0));
-			isEntered = true;
+			if(SwingUtilities.isLeftMouseButton(arg0)){
+				((JComponent) e).setBackground(new Color(0,0,0));
+			
+				count += 1;				
+				isEntered = true;
+				ships[arrayAssist] = selectObj(e);
+				JOptionPane.showMessageDialog(null, ships[arrayAssist]);
+				arrayAssist += 1;
+			}
 			}
 		else if (e == panel_52  ){
-			((JComponent) e).setBackground(new Color(0,0,0));
-			isEntered = true;
+			if(SwingUtilities.isLeftMouseButton(arg0)){
+				((JComponent) e).setBackground(new Color(0,0,0));
+			
+				count += 1;				
+				isEntered = true;
+				ships[arrayAssist] = selectObj(e);
+				JOptionPane.showMessageDialog(null, ships[arrayAssist]);
+				arrayAssist += 1;
+			}
 			}
 		else if (e == panel_53  ){
-			((JComponent) e).setBackground(new Color(0,0,0));
-			isEntered = true;
+			if(SwingUtilities.isLeftMouseButton(arg0)){
+				((JComponent) e).setBackground(new Color(0,0,0));
+			
+				count += 1;				
+				isEntered = true;
+				ships[arrayAssist] = selectObj(e);
+				JOptionPane.showMessageDialog(null, ships[arrayAssist]);
+				arrayAssist += 1;
+			}
 			}
 		else if (e == panel_54  ){
-			((JComponent) e).setBackground(new Color(0,0,0));
-			isEntered = true;
+			if(SwingUtilities.isLeftMouseButton(arg0)){
+				((JComponent) e).setBackground(new Color(0,0,0));
+			
+				count += 1;				
+				isEntered = true;
+				ships[arrayAssist] = selectObj(e);
+				JOptionPane.showMessageDialog(null, ships[arrayAssist]);
+				arrayAssist += 1;
+			}
 			}
 		else if (e == panel_55  ){
-			((JComponent) e).setBackground(new Color(0,0,0));
-			isEntered = true;
+			if(SwingUtilities.isLeftMouseButton(arg0)){
+				((JComponent) e).setBackground(new Color(0,0,0));
+			
+				count += 1;				
+				isEntered = true;
+				ships[arrayAssist] = selectObj(e);
+				JOptionPane.showMessageDialog(null, ships[arrayAssist]);
+				arrayAssist += 1;
+			}
 			}
 		else if (e == panel_56  ){
-			((JComponent) e).setBackground(new Color(0,0,0));
-			isEntered = true;
+			if(SwingUtilities.isLeftMouseButton(arg0)){
+				((JComponent) e).setBackground(new Color(0,0,0));
+			
+				count += 1;				
+				isEntered = true;
+				ships[arrayAssist] = selectObj(e);
+				JOptionPane.showMessageDialog(null, ships[arrayAssist]);
+				arrayAssist += 1;
+			}
 			}
 		else if (e == panel_57  ){
-			((JComponent) e).setBackground(new Color(0,0,0));
-			isEntered = true;
+			if(SwingUtilities.isLeftMouseButton(arg0)){
+				((JComponent) e).setBackground(new Color(0,0,0));
+			
+				count += 1;				
+				isEntered = true;
+				ships[arrayAssist] = selectObj(e);
+				JOptionPane.showMessageDialog(null, ships[arrayAssist]);
+				arrayAssist += 1;
+			}
 			}
 		else if (e == panel_58  ){
-			((JComponent) e).setBackground(new Color(0,0,0));
-			isEntered = true;
+			if(SwingUtilities.isLeftMouseButton(arg0)){
+				((JComponent) e).setBackground(new Color(0,0,0));
+			
+				count += 1;				
+				isEntered = true;
+				ships[arrayAssist] = selectObj(e);
+				JOptionPane.showMessageDialog(null, ships[arrayAssist]);
+				arrayAssist += 1;
+			}
 			}
 		else if (e == panel_59  ){
-			((JComponent) e).setBackground(new Color(0,0,0));
-			isEntered = true;
+			if(SwingUtilities.isLeftMouseButton(arg0)){
+				((JComponent) e).setBackground(new Color(0,0,0));
+			
+				count += 1;				
+				isEntered = true;
+				ships[arrayAssist] = selectObj(e);
+				JOptionPane.showMessageDialog(null, ships[arrayAssist]);
+				arrayAssist += 1;
+			}
 			}
 		else if (e == panel_60  ){
-			((JComponent) e).setBackground(new Color(0,0,0));
-			isEntered = true;
+			if(SwingUtilities.isLeftMouseButton(arg0)){
+				((JComponent) e).setBackground(new Color(0,0,0));
+			
+				count += 1;				
+				isEntered = true;
+				ships[arrayAssist] = selectObj(e);
+				JOptionPane.showMessageDialog(null, ships[arrayAssist]);
+				arrayAssist += 1;
+			}
 			}
 		else if (e == panel_61  ){
-			((JComponent) e).setBackground(new Color(0,0,0));
-			isEntered = true;
+			if(SwingUtilities.isLeftMouseButton(arg0)){
+				((JComponent) e).setBackground(new Color(0,0,0));
+			
+				count += 1;				
+				isEntered = true;
+				ships[arrayAssist] = selectObj(e);
+				JOptionPane.showMessageDialog(null, ships[arrayAssist]);
+				arrayAssist += 1;
+			}
 			}
 		else if (e == panel_62  ){
-			((JComponent) e).setBackground(new Color(0,0,0));
-			isEntered = true;
+			if(SwingUtilities.isLeftMouseButton(arg0)){
+				((JComponent) e).setBackground(new Color(0,0,0));
+			
+				count += 1;				
+				isEntered = true;
+				ships[arrayAssist] = selectObj(e);
+				JOptionPane.showMessageDialog(null, ships[arrayAssist]);
+				arrayAssist += 1;
+			}
 			}
 		else if (e == panel_63  ){
-			((JComponent) e).setBackground(new Color(0,0,0));
-			isEntered = true;
+			if(SwingUtilities.isLeftMouseButton(arg0)){
+				((JComponent) e).setBackground(new Color(0,0,0));
+			
+				count += 1;				
+				isEntered = true;
+				ships[arrayAssist] = selectObj(e);
+				JOptionPane.showMessageDialog(null, ships[arrayAssist]);
+				arrayAssist += 1;
+			}
 			}
 		else if (e == panel_64  ){
-			((JComponent) e).setBackground(new Color(0,0,0));
-			isEntered = true;
+			if(SwingUtilities.isLeftMouseButton(arg0)){
+				((JComponent) e).setBackground(new Color(0,0,0));
+			
+				count += 1;				
+				isEntered = true;
+				ships[arrayAssist] = selectObj(e);
+				JOptionPane.showMessageDialog(null, ships[arrayAssist]);
+				arrayAssist += 1;
 			}
-		count += 1;
+			}
+		
 	}
 	public void mouseEntered(MouseEvent arg0) {
 		// TODO Auto-generated method stub
@@ -1042,9 +1495,237 @@ public class SetShips extends JFrame implements ActionListener, MouseListener{
 	else if(content.equals("proceed")){
 		//TODO PROCEED FXN
 		setVisible(false);
-		new InitializeGame().setVisible(true);;
+		new LoadingGame().setVisible(true);
+		//PLACE COORDINATES ON ARRAY
+		setShipArray();
+		new LoadingGame().setVisible(false);
 		JOptionPane.showMessageDialog(null, "Let the Game Begin! ");
+		new InitializeGame().setVisible(true);
 		JOptionPane.showMessageDialog(null, "Select a coordinate to begin your attack");
 	}
 }
+	//TODO STRING ARRAY CLEAR
+	public void resetArray(){
+		for (int x = 0; x < ships.length; x++){
+			ships[x] = "";
+		}
+	}
+	//TODO slector
+	public String selectObj(Object e){
+	if(panel_1 == e){ return "panel_1"; }
+	else if(panel_2 == e){ return "panel_2"; }
+	else if(panel_3 == e){ return "panel_3"; }
+	else if(panel_4 == e){ return "panel_4"; }
+	else if(panel_5 == e){ return "panel_5"; }
+	else if(panel_6 == e){ return "panel_6"; }
+	else if(panel_7 == e){ return "panel_7"; }
+	else if(panel_8 == e){ return "panel_8"; }
+	else if(panel_9 == e){ return "panel_9"; }
+	else if(panel_10 == e){ return "panel_10"; }
+	else if(panel_11 == e){ return "panel_11"; }
+	else if(panel_12 == e){ return "panel_12"; }
+	else if(panel_13 == e){ return "panel_13"; }
+	else if(panel_14 == e){ return "panel_14"; }
+	else if(panel_15 == e){ return "panel_15"; }
+	else if(panel_16 == e){ return "panel_16"; }
+	else if(panel_17 == e){ return "panel_17"; }
+	else if(panel_18 == e){ return "panel_18"; }
+	else if(panel_19 == e){ return "panel_19"; }
+	else if(panel_20 == e){ return "panel_20"; }
+	else if(panel_21 == e){ return "panel_21"; }
+	else if(panel_22 == e){ return "panel_22"; }
+	else if(panel_23 == e){ return "panel_23"; }
+	else if(panel_24 == e){ return "panel_24"; }
+	else if(panel_25 == e){ return "panel_25"; }
+	else if(panel_26 == e){ return "panel_26"; }
+	else if(panel_27 == e){ return "panel_27"; }
+	else if(panel_28 == e){ return "panel_28"; }
+	else if(panel_29 == e){ return "panel_29"; }
+	else if(panel_30 == e){ return "panel_30"; }
+	else if(panel_31 == e){ return "panel_31"; }
+	else if(panel_32 == e){ return "panel_32"; }
+	else if(panel_33 == e){ return "panel_33"; }
+	else if(panel_34 == e){ return "panel_34"; }
+	else if(panel_35 == e){ return "panel_35"; }
+	else if(panel_36 == e){ return "panel_36"; }
+	else if(panel_37 == e){ return "panel_37"; }
+	else if(panel_38 == e){ return "panel_38"; }
+	else if(panel_39 == e){ return "panel_39"; }
+	else if(panel_40 == e){ return "panel_40"; }
+	else if(panel_41 == e){ return "panel_41"; }
+	else if(panel_42 == e){ return "panel_42"; }
+	else if(panel_43 == e){ return "panel_43"; }
+	else if(panel_44 == e){ return "panel_44"; }
+	else if(panel_45 == e){ return "panel_45"; }
+	else if(panel_46 == e){ return "panel_46"; }
+	else if(panel_47 == e){ return "panel_47"; }
+	else if(panel_48 == e){ return "panel_48"; }
+	else if(panel_49 == e){ return "panel_49"; }
+	else if(panel_50 == e){ return "panel_50"; }
+	else if(panel_51 == e){ return "panel_51"; }
+	else if(panel_52 == e){ return "panel_52"; }
+	else if(panel_53 == e){ return "panel_53"; }
+	else if(panel_54 == e){ return "panel_54"; }
+	else if(panel_55 == e){ return "panel_55"; }
+	else if(panel_56 == e){ return "panel_56"; }
+	else if(panel_57 == e){ return "panel_57"; }
+	else if(panel_58 == e){ return "panel_58"; }
+	else if(panel_59 == e){ return "panel_59"; }
+	else if(panel_60 == e){ return "panel_60"; }
+	else if(panel_61 == e){ return "panel_61"; }
+	else if(panel_62 == e){ return "panel_62"; }
+	else if(panel_63 == e){ return "panel_63"; }
+	else if(panel_64 == e){ return "panel_64"; }
+	else return "";
+	}
+	//TODO shawll we scrap this????
+	public void setShipArray(){
+		arrayAssist = 0;
+		for(int x = 0; x < ships.length; x++){
+			if(panel_1.getBackground() == black){
+				
+			}
+			else if(panel_2.getBackground() == black){
+				
+			}
+			else if(panel_3.getBackground() == black){
+				
+			}
+			else if(panel_4.getBackground() == black){
+				
+			}
+			else if(panel_5.getBackground() == black){}
+			else if(panel_6.getBackground() == black){}
+			else if(panel_7.getBackground() == black){}
+			else if(panel_8.getBackground() == black){}
+			else if(panel_9.getBackground() == black){}
+			else if(panel_10.getBackground() == black){}
+			else if(panel_11.getBackground() == black){}
+			else if(panel_12.getBackground() == black){}
+			else if(panel_13.getBackground() == black){}
+			else if(panel_14.getBackground() == black){}
+			else if(panel_15.getBackground() == black){}
+			else if(panel_16.getBackground() == black){}
+			else if(panel_17.getBackground() == black){}
+			else if(panel_18.getBackground() == black){}
+			else if(panel_19.getBackground() == black){}
+			else if(panel_20.getBackground() == black){}
+			else if(panel_21.getBackground() == black){}
+			else if(panel_22.getBackground() == black){}
+			else if(panel_23.getBackground() == black){}
+			else if(panel_24.getBackground() == black){}
+			else if(panel_25.getBackground() == black){}
+			else if(panel_26.getBackground() == black){}
+			else if(panel_27.getBackground() == black){}
+			else if(panel_28.getBackground() == black){}
+			else if(panel_29.getBackground() == black){
+				
+			}
+			else if(panel_30.getBackground() == black){
+				
+			}
+			else if(panel_31.getBackground() == black){
+				
+			}
+			else if(panel_32.getBackground() == black){
+				
+			}
+			else if(panel_33.getBackground() == black){
+				
+			}
+			else if(panel_34.getBackground() == black){
+				
+			}
+			else if(panel_35.getBackground() == black){
+				
+			}
+			else if(panel_36.getBackground() == black){
+				
+			}
+			else if(panel_37.getBackground() == black){
+				
+			}
+			else if(panel_38.getBackground() == black){
+				
+			}
+			else if(panel_39.getBackground() == black){
+				
+			}
+			else if(panel_40.getBackground() == black){
+				
+			}
+			else if(panel_41.getBackground() == black){
+				
+			}
+			else if(panel_42.getBackground() == black){
+				
+			}
+			else if(panel_43.getBackground() == black){
+				
+			}
+			else if(panel_44.getBackground() == black){
+				
+			}
+			else if(panel_45.getBackground() == black){
+				
+			}
+			else if(panel_46.getBackground() == black){
+				
+			}
+			else if(panel_47.getBackground() == black){
+				
+			}
+			else if(panel_48.getBackground() == black){
+				
+			}
+			else if(panel_49.getBackground() == black){
+				
+			}
+			else if(panel_50.getBackground() == black){
+				
+			}
+			else if(panel_51.getBackground() == black){
+				
+			}
+			else if(panel_52.getBackground() == black){
+				
+			}
+			else if(panel_53.getBackground() == black){
+				
+			}
+			else if(panel_54.getBackground() == black){
+				
+			}
+			else if(panel_55.getBackground() == black){
+				
+			}
+			else if(panel_56.getBackground() == black){
+				
+			}
+			else if(panel_57.getBackground() == black){
+				
+			}
+			else if(panel_58.getBackground() == black){
+				
+			}
+			else if(panel_59.getBackground() == black){
+				
+			}
+			else if(panel_60.getBackground() == black){
+				
+			}
+			else if(panel_61.getBackground() == black){
+				
+			}
+			else if(panel_62.getBackground() == black){
+				
+			}
+			else if(panel_63.getBackground() == black){
+				
+			}
+			else if(panel_64.getBackground() == black){
+				
+			}
+		}
+	}
 }
