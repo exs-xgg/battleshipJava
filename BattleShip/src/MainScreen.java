@@ -65,7 +65,7 @@ public class MainScreen extends JFrame implements ActionListener{
 	}
 	public void swapWindows(){
 	super.setVisible(false);
-	new InitializeGame().setVisible(true);
+	new SetShips().setVisible(true);
 	JOptionPane.showMessageDialog(null, "Set the AircraftCarrier's Position. Select 5 straight squares.");
 	}
 

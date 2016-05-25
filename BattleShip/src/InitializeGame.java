@@ -9,8 +9,7 @@ public class InitializeGame extends JFrame implements ActionListener{
 	Color black = new Color(0,0,0);
 	int score1 = 0;
 	static String name;
-	public static JPanel[] homeBase = new JPanel[30];	
-	public static JButton[] enemyBase = new JButton[15];
+	public static JPanel[] homeBase = new JPanel[30];
 	JFrame initGame = new JFrame();
 	MainScreen tempObj = new MainScreen();
 	JButton btnHelp = new JButton("HELP");
@@ -868,7 +867,7 @@ public class InitializeGame extends JFrame implements ActionListener{
 			miss(trigger);
 		}
 		
-		
+		enemyAttack(panel_1);
 		
 	}	
 	//TODO ENEMY PLACING GRID
@@ -913,14 +912,12 @@ public class InitializeGame extends JFrame implements ActionListener{
 	}
 	else return false;
 	}
+	public void enemyAttack(Object e){
+		for (int x = 0;  x < homeBase.length ; x ++){
+			if( e == homeBase[x]){
+				homeBase[x].setBackground(red);
+				JOptionPane.showMessageDialog(null,  "Captan, we've been hit!");
+			}
+		}
+	}
 }
-/**
- * PROJECT: BATTLESHIP IN JAVA
- * CONCEPTUALIZED AND CODED BY:
- * >ROMEO MANUEL E. DAVID
- * >SHEENA GUBATON
- * 
- * WITH SPECIAL PARTICIPATION OF:
- * HAYDE E. CASTRO
- */
-

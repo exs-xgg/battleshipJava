@@ -700,63 +700,59 @@ public class SetShips extends JFrame implements ActionListener, MouseListener{
 		Object e = arg0.getSource();
 		if (e == panel_1){
 			if(SwingUtilities.isLeftMouseButton(arg0)){
-				if (panel_1.getBackground() == (black)){
-					JOptionPane.showMessageDialog(null, "You cant select the same coordinate TWICE!");
-				}
-				else{
 				((JComponent) e).setBackground(new Color(0,0,0));
 				count += 1;				
 				isEntered = true;
 				ships[arrayAssist] = selectObj(e);
-				JOptionPane.showMessageDialog(null, "xx"+ships[arrayAssist]);
 				arrayAssist += 1;
-			}
 				}
-			}
+			
+				}
+			
 		else if (e == panel_2  ){
 			if(SwingUtilities.isLeftMouseButton(arg0)){
 				((JComponent) e).setBackground(new Color(0,0,0));
-			
 				count += 1;				
 				isEntered = true;
 				ships[arrayAssist] = selectObj(e);
-				JOptionPane.showMessageDialog(null, ships[arrayAssist]);
 				arrayAssist += 1;
-			}
-			}
+				}
+			
+				}
+			
 		else if (e == panel_3  ){
 			if(SwingUtilities.isLeftMouseButton(arg0)){
 				((JComponent) e).setBackground(new Color(0,0,0));
-			
 				count += 1;				
 				isEntered = true;
 				ships[arrayAssist] = selectObj(e);
-				JOptionPane.showMessageDialog(null, ships[arrayAssist]);
 				arrayAssist += 1;
-			}
-			}
+				}
+			
+				}
+			
 		else if (e == panel_4  ){
 			if(SwingUtilities.isLeftMouseButton(arg0)){
 				((JComponent) e).setBackground(new Color(0,0,0));
-			
 				count += 1;				
 				isEntered = true;
 				ships[arrayAssist] = selectObj(e);
-				JOptionPane.showMessageDialog(null, ships[arrayAssist]);
 				arrayAssist += 1;
-			}
-			}
+				}
+			
+				}
+			
 		else if (e == panel_5  ){
 			if(SwingUtilities.isLeftMouseButton(arg0)){
 				((JComponent) e).setBackground(new Color(0,0,0));
-			
 				count += 1;				
 				isEntered = true;
 				ships[arrayAssist] = selectObj(e);
-				JOptionPane.showMessageDialog(null, ships[arrayAssist]);
 				arrayAssist += 1;
-			}
-			}
+				}
+			
+				}
+			//TODO
 		else if (e == panel_6  ){
 			if(SwingUtilities.isLeftMouseButton(arg0)){
 				((JComponent) e).setBackground(new Color(0,0,0));
@@ -1406,6 +1402,7 @@ public class SetShips extends JFrame implements ActionListener, MouseListener{
 				arrayAssist += 1;
 			}
 			}
+		((JComponent) e).setEnabled(false);
 		
 	}
 	public void mouseEntered(MouseEvent arg0) {}
