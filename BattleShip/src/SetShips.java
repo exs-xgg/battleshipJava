@@ -1491,9 +1491,6 @@ public class SetShips extends JFrame implements ActionListener, MouseListener{
 		}
 	else if(content.equals("proceed")){
 		//TODO PROCEED FXN
-		for(int x = 0; x < ships.length ; x++){
-			System.out.println(ships[x]);
-		}
 		setVisible(false);
 		new LoadingGame().setVisible(true);
 		//setShipArray();
