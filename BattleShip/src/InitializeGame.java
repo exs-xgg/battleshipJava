@@ -882,6 +882,8 @@ public class InitializeGame extends JFrame implements ActionListener{
 		((JComponent) e).setForeground(black);
 		((JComponent) e).setBackground(black);
 	}
+	
+	
 	public void setMyShips(){
 		for (int x = 0; x <homeBase.length ; x ++){
 			if (homeBase[x] == "panel_1"){
@@ -889,8 +891,9 @@ public class InitializeGame extends JFrame implements ActionListener{
 			}
 		  else if (homeBase[x] == "panel_2"){setKill(panel_2);}
 		  else if (homeBase[x] == "panel_3"){setKill(panel_3);}
-		  else if (homeBase[x] == "panel_4"){setKill(panel_3);}
-		  else if (homeBase[x] == "panel_5"){setKill(panel_3);}
+		  else if (homeBase[x] == "panel_4"){setKill(panel_4);}
+		  else if (homeBase[x] == "panel_5"){setKill(panel_5);}
+			//TODO START HERE
 		  else if (homeBase[x] == "panel_6"){setKill(panel_3);}
 		  else if (homeBase[x] == "panel_7"){setKill(panel_3);}
 		  else if (homeBase[x] == "panel_8"){setKill(panel_3);}
