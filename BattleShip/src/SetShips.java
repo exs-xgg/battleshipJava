@@ -10,7 +10,7 @@ public class SetShips extends JFrame implements ActionListener, MouseListener{
 	int count = 0;
 	public static String[] ships = new String[30];
 	public static int arrayAssist = 0;
-	Color black = new Color(0,0,0);
+	Color blue= new Color(0,0,0);
 
 	JLabel lblNewLabel = new JLabel("SETTING CARRIER");
 	JButton btnCarrier = new JButton("SET CARRIER");
@@ -148,388 +148,199 @@ public class SetShips extends JFrame implements ActionListener, MouseListener{
 		label_7.setBounds(10, 381, 46, 44);
 		getContentPane().add(label_7);
 		getContentPane().setLayout(null);
+		
 		panel_1.setBounds(50, 66, 44, 44);
-		panel_1.setForeground(new Color(51, 204, 204));
-		panel_1.setBackground(new Color(0, 204, 255));
 		getContentPane().add(panel_1);
 		panel_2.setBounds(95, 66, 44, 44);
-		
-		
-		panel_2.setForeground(new Color(51, 204, 204));
-		panel_2.setBackground(new Color(0, 204, 255));
 		getContentPane().add(panel_2);
 		panel_3.setBounds(140, 66, 44, 44);
-		
-		
-		panel_3.setForeground(new Color(51, 204, 204));
-		panel_3.setBackground(new Color(0, 204, 255));
 		getContentPane().add(panel_3);
 		panel_4.setBounds(185, 66, 44, 44);
-		
-		panel_4.setForeground(new Color(51, 204, 204));
-		panel_4.setBackground(new Color(0, 204, 255));
 		getContentPane().add(panel_4);
 		panel_5.setBounds(230, 66, 44, 44);
-		
-		
-		panel_5.setForeground(new Color(51, 204, 204));
-		panel_5.setBackground(new Color(0, 204, 255));
 		getContentPane().add(panel_5);
 		panel_6.setBounds(275, 66, 44, 44);
-		
-		
-		panel_6.setForeground(new Color(51, 204, 204));
-		panel_6.setBackground(new Color(0, 204, 255));
 		getContentPane().add(panel_6);
 		panel_7.setBounds(320, 66, 44, 44);
-		
-		
-		panel_7.setForeground(new Color(51, 204, 204));
-		panel_7.setBackground(new Color(0, 204, 255));
 		getContentPane().add(panel_7);
 		panel_8.setBounds(365, 66, 44, 44);
-		
-		
-		panel_8.setForeground(new Color(51, 204, 204));
-		panel_8.setBackground(new Color(0, 204, 255));
 		getContentPane().add(panel_8);
 		panel_9.setBounds(50, 111, 44, 44);
-		
-		
-		panel_9.setForeground(new Color(51, 204, 204));
-		panel_9.setBackground(new Color(0, 204, 255));
 		getContentPane().add(panel_9);
 		panel_10.setBounds(95, 111, 44, 44);
-		
-		
-		panel_10.setForeground(new Color(51, 204, 204));
-		panel_10.setBackground(new Color(0, 204, 255));
 		getContentPane().add(panel_10);
 		panel_11.setBounds(140, 111, 44, 44);
-		
-		
-		panel_11.setForeground(new Color(51, 204, 204));
-		panel_11.setBackground(new Color(0, 204, 255));
 		getContentPane().add(panel_11);
 		panel_12.setBounds(185, 111, 44, 44);
-		
-		
-		panel_12.setForeground(new Color(51, 204, 204));
-		panel_12.setBackground(new Color(0, 204, 255));
 		getContentPane().add(panel_12);
 		panel_13.setBounds(230, 111, 44, 44);
-		
-		
-		panel_13.setForeground(new Color(51, 204, 204));
-		panel_13.setBackground(new Color(0, 204, 255));
 		getContentPane().add(panel_13);
 		panel_14.setBounds(275, 111, 44, 44);
-		
-		
-		panel_14.setForeground(new Color(51, 204, 204));
-		panel_14.setBackground(new Color(0, 204, 255));
 		getContentPane().add(panel_14);
 		panel_15.setBounds(320, 111, 44, 44);
-		
-		
-		panel_15.setForeground(new Color(51, 204, 204));
-		panel_15.setBackground(new Color(0, 204, 255));
 		getContentPane().add(panel_15);
 		panel_16.setBounds(365, 111, 44, 44);
-		
-		
-		panel_16.setForeground(new Color(51, 204, 204));
-		panel_16.setBackground(new Color(0, 204, 255));
 		getContentPane().add(panel_16);
 		panel_17.setBounds(50, 156, 44, 44);
-		
-		
-		panel_17.setForeground(new Color(51, 204, 204));
-		panel_17.setBackground(new Color(0, 204, 255));
 		getContentPane().add(panel_17);
 		panel_18.setBounds(95, 156, 44, 44);
-		
-		
-		panel_18.setForeground(new Color(51, 204, 204));
-		panel_18.setBackground(new Color(0, 204, 255));
 		getContentPane().add(panel_18);
 		panel_19.setBounds(140, 156, 44, 44);
-		
-		
-		panel_19.setForeground(new Color(51, 204, 204));
-		panel_19.setBackground(new Color(0, 204, 255));
 		getContentPane().add(panel_19);
 		panel_20.setBounds(185, 156, 44, 44);
-		
-		
-		panel_20.setForeground(new Color(51, 204, 204));
-		panel_20.setBackground(new Color(0, 204, 255));
 		getContentPane().add(panel_20);
 		panel_21.setBounds(230, 156, 44, 44);
-		
-	
-		panel_21.setForeground(new Color(51, 204, 204));
-		panel_21.setBackground(new Color(0, 204, 255));
 		getContentPane().add(panel_21);
 		panel_22.setBounds(275, 156, 44, 44);
-		
-		
-		panel_22.setForeground(new Color(51, 204, 204));
-		panel_22.setBackground(new Color(0, 204, 255));
 		getContentPane().add(panel_22);
 		panel_23.setBounds(320, 156, 44, 44);
-		
-		
-		panel_23.setForeground(new Color(51, 204, 204));
-		panel_23.setBackground(new Color(0, 204, 255));
 		getContentPane().add(panel_23);
 		panel_24.setBounds(365, 156, 44, 44);
-		
-		
-		panel_24.setForeground(new Color(51, 204, 204));
-		panel_24.setBackground(new Color(0, 204, 255));
 		getContentPane().add(panel_24);
 		panel_25.setBounds(50, 201, 44, 44);
-		
-		
-		panel_25.setForeground(new Color(51, 204, 204));
-		panel_25.setBackground(new Color(0, 204, 255));
 		getContentPane().add(panel_25);
 		panel_26.setBounds(95, 201, 44, 44);
-		
-		
-		panel_26.setForeground(new Color(51, 204, 204));
-		panel_26.setBackground(new Color(0, 204, 255));
 		getContentPane().add(panel_26);
 		panel_27.setBounds(140, 201, 44, 44);
-		
-		
-		panel_27.setForeground(new Color(51, 204, 204));
-		panel_27.setBackground(new Color(0, 204, 255));
 		getContentPane().add(panel_27);
 		panel_28.setBounds(185, 201, 44, 44);
-		
-		
-		panel_28.setForeground(new Color(51, 204, 204));
-		panel_28.setBackground(new Color(0, 204, 255));
 		getContentPane().add(panel_28);
 		panel_29.setBounds(230, 201, 44, 44);
-		
-		
-		panel_29.setForeground(new Color(51, 204, 204));
-		panel_29.setBackground(new Color(0, 204, 255));
 		getContentPane().add(panel_29);
 		panel_30.setBounds(275, 201, 44, 44);
-		
-		
-		panel_30.setForeground(new Color(51, 204, 204));
-		panel_30.setBackground(new Color(0, 204, 255));
 		getContentPane().add(panel_30);
 		panel_31.setBounds(320, 201, 44, 44);
-		
-		
-		panel_31.setForeground(new Color(51, 204, 204));
-		panel_31.setBackground(new Color(0, 204, 255));
 		getContentPane().add(panel_31);
 		panel_32.setBounds(365, 201, 44, 44);
-		
-		
-		panel_32.setForeground(new Color(51, 204, 204));
-		panel_32.setBackground(new Color(0, 204, 255));
 		getContentPane().add(panel_32);
 		panel_33.setBounds(50, 246, 44, 44);
-		
-		
-		panel_33.setForeground(new Color(51, 204, 204));
-		panel_33.setBackground(new Color(0, 204, 255));
 		getContentPane().add(panel_33);
 		panel_34.setBounds(95, 246, 44, 44);
-		
-		
-		panel_34.setForeground(new Color(51, 204, 204));
-		panel_34.setBackground(new Color(0, 204, 255));
 		getContentPane().add(panel_34);
 		panel_35.setBounds(140, 246, 44, 44);
-		
-		
-		panel_35.setForeground(new Color(51, 204, 204));
-		panel_35.setBackground(new Color(0, 204, 255));
 		getContentPane().add(panel_35);
 		panel_36.setBounds(185, 246, 44, 44);
-		
-		
-		panel_36.setForeground(new Color(51, 204, 204));
-		panel_36.setBackground(new Color(0, 204, 255));
 		getContentPane().add(panel_36);
 		panel_37.setBounds(230, 246, 44, 44);
-		
-		
-		panel_37.setForeground(new Color(51, 204, 204));
-		panel_37.setBackground(new Color(0, 204, 255));
 		getContentPane().add(panel_37);
 		panel_38.setBounds(275, 246, 44, 44);
-		
-		
-		panel_38.setForeground(new Color(51, 204, 204));
-		panel_38.setBackground(new Color(0, 204, 255));
 		getContentPane().add(panel_38);
 		panel_39.setBounds(320, 246, 44, 44);
-		
-		
-		panel_39.setForeground(new Color(51, 204, 204));
-		panel_39.setBackground(new Color(0, 204, 255));
 		getContentPane().add(panel_39);
 		panel_40.setBounds(365, 246, 44, 44);
-		
-		
-		panel_40.setForeground(new Color(51, 204, 204));
-		panel_40.setBackground(new Color(0, 204, 255));
 		getContentPane().add(panel_40);
 		panel_41.setBounds(50, 291, 44, 44);
-		
-		
-		panel_41.setForeground(new Color(51, 204, 204));
-		panel_41.setBackground(new Color(0, 204, 255));
 		getContentPane().add(panel_41);
 		panel_42.setBounds(95, 291, 44, 44);
-		
-		
-		panel_42.setForeground(new Color(51, 204, 204));
-		panel_42.setBackground(new Color(0, 204, 255));
 		getContentPane().add(panel_42);
 		panel_43.setBounds(140, 291, 44, 44);
-		
-		
-		panel_43.setForeground(new Color(51, 204, 204));
-		panel_43.setBackground(new Color(0, 204, 255));
 		getContentPane().add(panel_43);
 		panel_44.setBounds(185, 291, 44, 44);
-		
-		
-		panel_44.setForeground(new Color(51, 204, 204));
-		panel_44.setBackground(new Color(0, 204, 255));
 		getContentPane().add(panel_44);
 		panel_45.setBounds(230, 291, 44, 44);
-		
-		
-		panel_45.setForeground(new Color(51, 204, 204));
-		panel_45.setBackground(new Color(0, 204, 255));
 		getContentPane().add(panel_45);
 		panel_46.setBounds(275, 291, 44, 44);
-		
-		
-		panel_46.setForeground(new Color(51, 204, 204));
-		panel_46.setBackground(new Color(0, 204, 255));
 		getContentPane().add(panel_46);
 		panel_47.setBounds(320, 291, 44, 44);
-		
-		
-		panel_47.setForeground(new Color(51, 204, 204));
-		panel_47.setBackground(new Color(0, 204, 255));
 		getContentPane().add(panel_47);
 		panel_48.setBounds(365, 291, 44, 44);
-		
-		
-		panel_48.setForeground(new Color(51, 204, 204));
-		panel_48.setBackground(new Color(0, 204, 255));
 		getContentPane().add(panel_48);
 		panel_49.setBounds(50, 336, 44, 44);
-		
-		
-		panel_49.setForeground(new Color(51, 204, 204));
-		panel_49.setBackground(new Color(0, 204, 255));
 		getContentPane().add(panel_49);
 		panel_50.setBounds(95, 336, 44, 44);
-		
-		
-		panel_50.setForeground(new Color(51, 204, 204));
-		panel_50.setBackground(new Color(0, 204, 255));
 		getContentPane().add(panel_50);
 		panel_51.setBounds(140, 336, 44, 44);
-		
-		
-		panel_51.setForeground(new Color(51, 204, 204));
-		panel_51.setBackground(new Color(0, 204, 255));
 		getContentPane().add(panel_51);
 		panel_52.setBounds(185, 336, 44, 44);
-		
-		
-		panel_52.setForeground(new Color(51, 204, 204));
-		panel_52.setBackground(new Color(0, 204, 255));
 		getContentPane().add(panel_52);
 		panel_53.setBounds(230, 336, 44, 44);
-		
-		
-		panel_53.setForeground(new Color(51, 204, 204));
-		panel_53.setBackground(new Color(0, 204, 255));
 		getContentPane().add(panel_53);
 		panel_54.setBounds(275, 336, 44, 44);
-		
-		
-		panel_54.setForeground(new Color(51, 204, 204));
-		panel_54.setBackground(new Color(0, 204, 255));
 		getContentPane().add(panel_54);
 		panel_55.setBounds(320, 336, 44, 44);
-		
-		
-		panel_55.setForeground(new Color(51, 204, 204));
-		panel_55.setBackground(new Color(0, 204, 255));
 		getContentPane().add(panel_55);
 		panel_56.setBounds(365, 336, 44, 44);
-		
-		
-		panel_56.setForeground(new Color(51, 204, 204));
-		panel_56.setBackground(new Color(0, 204, 255));
 		getContentPane().add(panel_56);
 		panel_57.setBounds(50, 381, 44, 44);
-		
-		
-		panel_57.setForeground(new Color(51, 204, 204));
-		panel_57.setBackground(new Color(0, 204, 255));
 		getContentPane().add(panel_57);
 		panel_58.setBounds(95, 381, 44, 44);
-		
-		
-		panel_58.setForeground(new Color(51, 204, 204));
-		panel_58.setBackground(new Color(0, 204, 255));
 		getContentPane().add(panel_58);
 		panel_59.setBounds(140, 381, 44, 44);
-		
-		
-		panel_59.setForeground(new Color(51, 204, 204));
-		panel_59.setBackground(new Color(0, 204, 255));
 		getContentPane().add(panel_59);
 		panel_60.setBounds(185, 381, 44, 44);
-		
-		
-		panel_60.setForeground(new Color(51, 204, 204));
-		panel_60.setBackground(new Color(0, 204, 255));
 		getContentPane().add(panel_60);
 		panel_61.setBounds(230, 381, 44, 44);
-		
-		
-		panel_61.setForeground(new Color(51, 204, 204));
-		panel_61.setBackground(new Color(0, 204, 255));
 		getContentPane().add(panel_61);
 		panel_62.setBounds(275, 381, 44, 44);
-		
-		
-		panel_62.setForeground(new Color(51, 204, 204));
-		panel_62.setBackground(new Color(0, 204, 255));
 		getContentPane().add(panel_62);
 		panel_63.setBounds(320, 381, 44, 44);
-		
-		
-		panel_63.setForeground(new Color(51, 204, 204));
-		panel_63.setBackground(new Color(0, 204, 255));
 		getContentPane().add(panel_63);
 		panel_64.setBounds(365, 381, 44, 44);
-		
-		
-		panel_64.setForeground(new Color(51, 204, 204));
-		panel_64.setBackground(new Color(0, 204, 255));
 		getContentPane().add(panel_64);
-		
+		setAttributes(panel_1);
+		setAttributes(panel_2);
+		setAttributes(panel_3);
+		setAttributes(panel_4);
+		setAttributes(panel_5);
+		setAttributes(panel_6);
+		setAttributes(panel_7);
+		setAttributes(panel_8);
+		setAttributes(panel_9);
+		setAttributes(panel_10);
+		setAttributes(panel_11);
+		setAttributes(panel_12);
+		setAttributes(panel_13);
+		setAttributes(panel_14);
+		setAttributes(panel_15);
+		setAttributes(panel_16);
+		setAttributes(panel_17);
+		setAttributes(panel_18);
+		setAttributes(panel_19);
+		setAttributes(panel_20);
+		setAttributes(panel_21);
+		setAttributes(panel_22);
+		setAttributes(panel_23);
+		setAttributes(panel_24);
+		setAttributes(panel_25);
+		setAttributes(panel_26);
+		setAttributes(panel_27);
+		setAttributes(panel_28);
+		setAttributes(panel_29);
+		setAttributes(panel_30);
+		setAttributes(panel_31);
+		setAttributes(panel_32);
+		setAttributes(panel_33);
+		setAttributes(panel_34);
+		setAttributes(panel_35);
+		setAttributes(panel_36);
+		setAttributes(panel_37);
+		setAttributes(panel_38);
+		setAttributes(panel_39);
+		setAttributes(panel_40);
+		setAttributes(panel_41);
+		setAttributes(panel_42);
+		setAttributes(panel_43);
+		setAttributes(panel_44);
+		setAttributes(panel_45);
+		setAttributes(panel_46);
+		setAttributes(panel_47);
+		setAttributes(panel_48);
+		setAttributes(panel_49);
+		setAttributes(panel_50);
+		setAttributes(panel_51);
+		setAttributes(panel_52);
+		setAttributes(panel_53);
+		setAttributes(panel_54);
+		setAttributes(panel_55);
+		setAttributes(panel_56);
+		setAttributes(panel_57);
+		setAttributes(panel_58);
+		setAttributes(panel_59);
+		setAttributes(panel_60);
+		setAttributes(panel_61);
+		setAttributes(panel_62);
+		setAttributes(panel_63);
+		setAttributes(panel_64);
 		//TODO RESET fxn
 		JButton btnReset = new JButton("RESET");
 		btnReset.addActionListener(new ActionListener() {
@@ -622,6 +433,18 @@ public class SetShips extends JFrame implements ActionListener, MouseListener{
 		//TODO selector
 		btnCarrier.setBounds(419, 70, 184, 60);
 		getContentPane().add(btnCarrier);
+		
+		JPanel panel_x42 = new JPanel();
+		panel_x42.setBounds(95, 291, 44, 44);
+		getContentPane().add(panel_x42);
+		
+		JPanel panel_x43 = new JPanel();
+		panel_x43.setBounds(140, 291, 44, 44);
+		getContentPane().add(panel_x43);
+		
+		JPanel panel_x53 = new JPanel();
+		panel_x53.setBounds(230, 336, 44, 44);
+		getContentPane().add(panel_x53);
 		btnCarrier.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
@@ -698,656 +521,91 @@ public class SetShips extends JFrame implements ActionListener, MouseListener{
 	
 	public void mouseClicked(MouseEvent arg0) {
 		Object e = arg0.getSource();
-		if (e == panel_1){
-			if(SwingUtilities.isLeftMouseButton(arg0)){
-				((JComponent) e).setBackground(new Color(0,0,0));
-				count += 1;				
-				isEntered = true;
-				ships[arrayAssist] = selectObj(e);
-				arrayAssist += 1;
-				}
+		if ((e == panel_1)||
+				(e == panel_2)||
+				(e == panel_3)||
+				(e == panel_4)||
+				(e == panel_5)||
+				(e == panel_6)||
+				(e == panel_7)||
+				(e == panel_8)||
+				(e == panel_9)||
+				(e == panel_10)||
+				(e == panel_11)||
+				(e == panel_12)||
+				(e == panel_13)||
+				(e == panel_14)||
+				(e == panel_15)||
+				(e == panel_16)||
+				(e == panel_17)||
+				(e == panel_18)||
+				(e == panel_19)||
+				(e == panel_20)||
+				(e == panel_21)||
+				(e == panel_22)||
+				(e == panel_23)||
+				(e == panel_24)||
+				(e == panel_25)||
+				(e == panel_26)||
+				(e == panel_27)||
+				(e == panel_28)||
+				(e == panel_29)||
+				(e == panel_30)||
+				(e == panel_31)||
+				(e == panel_32)||
+				(e == panel_33)||
+				(e == panel_34)||
+				(e == panel_35)||
+				(e == panel_36)||
+				(e == panel_37)||
+				(e == panel_38)||
+				(e == panel_39)||
+				(e == panel_40)||
+				(e == panel_41)||
+				(e == panel_42)||
+				(e == panel_43)||
+				(e == panel_44)||
+				(e == panel_45)||
+				(e == panel_46)||
+				(e == panel_47)||
+				(e == panel_48)||
+				(e == panel_49)||
+				(e == panel_50)||
+				(e == panel_51)||
+				(e == panel_52)||
+				(e == panel_53)||
+				(e == panel_54)||
+				(e == panel_55)||
+				(e == panel_56)||
+				(e == panel_57)||
+				(e == panel_58)||
+				(e == panel_59)||
+				(e == panel_60)||
+				(e == panel_61)||
+				(e == panel_62)||
+				(e == panel_63)||
+				(e == panel_64)){
+			panelSet(e, arg0);
+			}
 			
-				}
-			
-		else if (e == panel_2  ){
-			if(SwingUtilities.isLeftMouseButton(arg0)){
-				((JComponent) e).setBackground(new Color(0,0,0));
-				count += 1;				
-				isEntered = true;
-				ships[arrayAssist] = selectObj(e);
-				arrayAssist += 1;
-				}
-			
-				}
-			
-		else if (e == panel_3  ){
-			if(SwingUtilities.isLeftMouseButton(arg0)){
-				((JComponent) e).setBackground(new Color(0,0,0));
-				count += 1;				
-				isEntered = true;
-				ships[arrayAssist] = selectObj(e);
-				arrayAssist += 1;
-				}
-			
-				}
-			
-		else if (e == panel_4  ){
-			if(SwingUtilities.isLeftMouseButton(arg0)){
-				((JComponent) e).setBackground(new Color(0,0,0));
-				count += 1;				
-				isEntered = true;
-				ships[arrayAssist] = selectObj(e);
-				arrayAssist += 1;
-				}
-			
-				}
-			
-		else if (e == panel_5  ){
-			if(SwingUtilities.isLeftMouseButton(arg0)){
-				((JComponent) e).setBackground(new Color(0,0,0));
-				count += 1;				
-				isEntered = true;
-				ships[arrayAssist] = selectObj(e);
-				arrayAssist += 1;
-				}
-			
-				}
-			
-		else if (e == panel_6  ){
-			if(SwingUtilities.isLeftMouseButton(arg0)){
-				((JComponent) e).setBackground(new Color(0,0,0));
-				count += 1;				
-				isEntered = true;
-				ships[arrayAssist] = selectObj(e);
-				arrayAssist += 1;
-				}
-			
-				}
-		else if (e == panel_7  ){
-			if(SwingUtilities.isLeftMouseButton(arg0)){
-				((JComponent) e).setBackground(new Color(0,0,0));
-				count += 1;				
-				isEntered = true;
-				ships[arrayAssist] = selectObj(e);
-				arrayAssist += 1;
-				}
-			
-				}
-		else if (e == panel_8  ){
-			if(SwingUtilities.isLeftMouseButton(arg0)){
-				((JComponent) e).setBackground(new Color(0,0,0));
-				count += 1;				
-				isEntered = true;
-				ships[arrayAssist] = selectObj(e);
-				arrayAssist += 1;
-				}
-			
-				}
-		else if (e == panel_9  ){
-			if(SwingUtilities.isLeftMouseButton(arg0)){
-				((JComponent) e).setBackground(new Color(0,0,0));
-				count += 1;				
-				isEntered = true;
-				ships[arrayAssist] = selectObj(e);
-				arrayAssist += 1;
-				}
-			
-				}
-		else if (e == panel_10  ){
-			if(SwingUtilities.isLeftMouseButton(arg0)){
-				((JComponent) e).setBackground(new Color(0,0,0));
-				count += 1;				
-				isEntered = true;
-				ships[arrayAssist] = selectObj(e);
-				arrayAssist += 1;
-				}
-			
-				}
-		//	TODO SHEEN
-		else if (e == panel_11  ){
-			if(SwingUtilities.isLeftMouseButton(arg0)){
-				((JComponent) e).setBackground(new Color(0,0,0));
-				count += 1;				
-				isEntered = true;
-				ships[arrayAssist] = selectObj(e);
-				arrayAssist += 1;
-				}
-			
-				}
-		else if (e == panel_12  ){
-			if(SwingUtilities.isLeftMouseButton(arg0)){
-				((JComponent) e).setBackground(new Color(0,0,0));
-				count += 1;				
-				isEntered = true;
-				ships[arrayAssist] = selectObj(e);
-				arrayAssist += 1;
-				}
-			
-				}
-		else if (e == panel_13  ){
-			if(SwingUtilities.isLeftMouseButton(arg0)){
-				((JComponent) e).setBackground(new Color(0,0,0));
-				count += 1;				
-				isEntered = true;
-				ships[arrayAssist] = selectObj(e);
-				arrayAssist += 1;
-				}
-			
-				}
-		else if (e == panel_14  ){
-			if(SwingUtilities.isLeftMouseButton(arg0)){
-				((JComponent) e).setBackground(new Color(0,0,0));
-				count += 1;				
-				isEntered = true;
-				ships[arrayAssist] = selectObj(e);
-				arrayAssist += 1;
-				}
-			
-				}
-		else if (e == panel_15  ){
-			if(SwingUtilities.isLeftMouseButton(arg0)){
-				((JComponent) e).setBackground(new Color(0,0,0));
-				count += 1;				
-				isEntered = true;
-				ships[arrayAssist] = selectObj(e);
-				arrayAssist += 1;
-				}
-			
-				}
-		else if (e == panel_16  ){
-			if(SwingUtilities.isLeftMouseButton(arg0)){
-				((JComponent) e).setBackground(new Color(0,0,0));
-				count += 1;				
-				isEntered = true;
-				ships[arrayAssist] = selectObj(e);
-				arrayAssist += 1;
-				}
-			
-				}
-		else if (e == panel_17  ){
-			if(SwingUtilities.isLeftMouseButton(arg0)){
-				((JComponent) e).setBackground(new Color(0,0,0));
-				count += 1;				
-				isEntered = true;
-				ships[arrayAssist] = selectObj(e);
-				arrayAssist += 1;
-				}
-			
-				}
-		else if (e == panel_18  ){
-			if(SwingUtilities.isLeftMouseButton(arg0)){
-				((JComponent) e).setBackground(new Color(0,0,0));
-				count += 1;				
-				isEntered = true;
-				ships[arrayAssist] = selectObj(e);
-				arrayAssist += 1;
-				}
-			
-				}
-		else if (e == panel_19  ){
-			if(SwingUtilities.isLeftMouseButton(arg0)){
-				((JComponent) e).setBackground(new Color(0,0,0));
-				count += 1;				
-				isEntered = true;
-				ships[arrayAssist] = selectObj(e);
-				arrayAssist += 1;
-				}
-			
-				}
-		else if (e == panel_20  ){
-			if(SwingUtilities.isLeftMouseButton(arg0)){
-				((JComponent) e).setBackground(new Color(0,0,0));
-				count += 1;				
-				isEntered = true;
-				ships[arrayAssist] = selectObj(e);
-				arrayAssist += 1;
-				}
-			
-				}
-		else if (e == panel_21  ){
-			if(SwingUtilities.isLeftMouseButton(arg0)){
-				((JComponent) e).setBackground(new Color(0,0,0));
-				count += 1;				
-				isEntered = true;
-				ships[arrayAssist] = selectObj(e);
-				arrayAssist += 1;
-				}
-			
-				}
-		else if (e == panel_22  ){
-			if(SwingUtilities.isLeftMouseButton(arg0)){
-				((JComponent) e).setBackground(new Color(0,0,0));
-				count += 1;				
-				isEntered = true;
-				ships[arrayAssist] = selectObj(e);
-				arrayAssist += 1;
-				}
-			
-				}
-		else if (e == panel_23  ){
-			if(SwingUtilities.isLeftMouseButton(arg0)){
-				((JComponent) e).setBackground(new Color(0,0,0));
-				count += 1;				
-				isEntered = true;
-				ships[arrayAssist] = selectObj(e);
-				arrayAssist += 1;
-				}
-			
-				}
-		else if (e == panel_24  ){
-			if(SwingUtilities.isLeftMouseButton(arg0)){
-				((JComponent) e).setBackground(new Color(0,0,0));
-				count += 1;				
-				isEntered = true;
-				ships[arrayAssist] = selectObj(e);
-				arrayAssist += 1;
-				}
-			
-				}
-		else if (e == panel_25  ){
-			if(SwingUtilities.isLeftMouseButton(arg0)){
-				((JComponent) e).setBackground(new Color(0,0,0));
-				count += 1;				
-				isEntered = true;
-				ships[arrayAssist] = selectObj(e);
-				arrayAssist += 1;
-				}
-			
-				}
-		else if (e == panel_26  ){
-			if(SwingUtilities.isLeftMouseButton(arg0)){
-				((JComponent) e).setBackground(new Color(0,0,0));
-				count += 1;				
-				isEntered = true;
-				ships[arrayAssist] = selectObj(e);
-				arrayAssist += 1;
-				}
-			
-				}
-		else if (e == panel_27  ){
-			if(SwingUtilities.isLeftMouseButton(arg0)){
-				((JComponent) e).setBackground(new Color(0,0,0));
-				count += 1;				
-				isEntered = true;
-				ships[arrayAssist] = selectObj(e);
-				arrayAssist += 1;
-				}
-			
-				}
-		else if (e == panel_28  ){
-			if(SwingUtilities.isLeftMouseButton(arg0)){
-				((JComponent) e).setBackground(new Color(0,0,0));
-				count += 1;				
-				isEntered = true;
-				ships[arrayAssist] = selectObj(e);
-				arrayAssist += 1;
-				}
-			
-				}
-		else if (e == panel_29  ){
-			if(SwingUtilities.isLeftMouseButton(arg0)){
-				((JComponent) e).setBackground(new Color(0,0,0));
-				count += 1;				
-				isEntered = true;
-				ships[arrayAssist] = selectObj(e);
-				arrayAssist += 1;
-				}
-			
-				}
-		else if (e == panel_30  ){
-			if(SwingUtilities.isLeftMouseButton(arg0)){
-				((JComponent) e).setBackground(new Color(0,0,0));
-				count += 1;				
-				isEntered = true;
-				ships[arrayAssist] = selectObj(e);
-				arrayAssist += 1;
-				}
-			
-				}
-		else if (e == panel_31  ){
-			if(SwingUtilities.isLeftMouseButton(arg0)){
-				((JComponent) e).setBackground(new Color(0,0,0));
-				count += 1;				
-				isEntered = true;
-				ships[arrayAssist] = selectObj(e);
-				arrayAssist += 1;
-				}
-			
-				}
-		else if (e == panel_32  ){
-			if(SwingUtilities.isLeftMouseButton(arg0)){
-				((JComponent) e).setBackground(new Color(0,0,0));
-				count += 1;				
-				isEntered = true;
-				ships[arrayAssist] = selectObj(e);
-				arrayAssist += 1;
-				}
-			
-				}
-		else if (e == panel_33  ){
-			if(SwingUtilities.isLeftMouseButton(arg0)){
-				((JComponent) e).setBackground(new Color(0,0,0));
-				count += 1;				
-				isEntered = true;
-				ships[arrayAssist] = selectObj(e);
-				arrayAssist += 1;
-				}
-			
-				}
-		else if (e == panel_34  ){
-			if(SwingUtilities.isLeftMouseButton(arg0)){
-				((JComponent) e).setBackground(new Color(0,0,0));
-				count += 1;				
-				isEntered = true;
-				ships[arrayAssist] = selectObj(e);
-				arrayAssist += 1;
-				}
-			
-				}
-		else if (e == panel_35  ){
-			if(SwingUtilities.isLeftMouseButton(arg0)){
-				((JComponent) e).setBackground(new Color(0,0,0));
-				count += 1;				
-				isEntered = true;
-				ships[arrayAssist] = selectObj(e);
-				arrayAssist += 1;
-				}
-			
-				}
-		else if (e == panel_36  ){
-			if(SwingUtilities.isLeftMouseButton(arg0)){
-				((JComponent) e).setBackground(new Color(0,0,0));
-				count += 1;				
-				isEntered = true;
-				ships[arrayAssist] = selectObj(e);
-				arrayAssist += 1;
-				}
-			
-				}
-		else if (e == panel_37  ){
-			if(SwingUtilities.isLeftMouseButton(arg0)){
-				((JComponent) e).setBackground(new Color(0,0,0));
-				count += 1;				
-				isEntered = true;
-				ships[arrayAssist] = selectObj(e);
-				arrayAssist += 1;
-				}
-			
-				}
-		else if (e == panel_38  ){
-			if(SwingUtilities.isLeftMouseButton(arg0)){
-				((JComponent) e).setBackground(new Color(0,0,0));
-				count += 1;				
-				isEntered = true;
-				ships[arrayAssist] = selectObj(e);
-				arrayAssist += 1;
-				}
-			
-				}
-		else if (e == panel_39  ){
-			if(SwingUtilities.isLeftMouseButton(arg0)){
-				((JComponent) e).setBackground(new Color(0,0,0));
-				count += 1;				
-				isEntered = true;
-				ships[arrayAssist] = selectObj(e);
-				arrayAssist += 1;
-				}
-			
-				}
-		else if (e == panel_40  ){
-			if(SwingUtilities.isLeftMouseButton(arg0)){
-				((JComponent) e).setBackground(new Color(0,0,0));
-				count += 1;				
-				isEntered = true;
-				ships[arrayAssist] = selectObj(e);
-				arrayAssist += 1;
-				}
-			
-				}
-		else if (e == panel_41  ){
-			if(SwingUtilities.isLeftMouseButton(arg0)){
-				((JComponent) e).setBackground(new Color(0,0,0));
-				count += 1;				
-				isEntered = true;
-				ships[arrayAssist] = selectObj(e);
-				arrayAssist += 1;
-				}
-			
-				}
-		else if (e == panel_42  ){
-			if(SwingUtilities.isLeftMouseButton(arg0)){
-				((JComponent) e).setBackground(new Color(0,0,0));
-				count += 1;				
-				isEntered = true;
-				ships[arrayAssist] = selectObj(e);
-				arrayAssist += 1;
-				}
-			
-				}
-		else if (e == panel_43  ){
-			if(SwingUtilities.isLeftMouseButton(arg0)){
-				((JComponent) e).setBackground(new Color(0,0,0));
-				count += 1;				
-				isEntered = true;
-				ships[arrayAssist] = selectObj(e);
-				arrayAssist += 1;
-				}
-			
-				}
-		else if (e == panel_44  ){
-			if(SwingUtilities.isLeftMouseButton(arg0)){
-				((JComponent) e).setBackground(new Color(0,0,0));
-				count += 1;				
-				isEntered = true;
-				ships[arrayAssist] = selectObj(e);
-				arrayAssist += 1;
-				}
-			
-				}
-		else if (e == panel_45  ){
-			if(SwingUtilities.isLeftMouseButton(arg0)){
-				((JComponent) e).setBackground(new Color(0,0,0));
-				count += 1;				
-				isEntered = true;
-				ships[arrayAssist] = selectObj(e);
-				arrayAssist += 1;
-				}
-			
-				}
-		else if (e == panel_46  ){
-			if(SwingUtilities.isLeftMouseButton(arg0)){
-				((JComponent) e).setBackground(new Color(0,0,0));
-				count += 1;				
-				isEntered = true;
-				ships[arrayAssist] = selectObj(e);
-				arrayAssist += 1;
-				}
-			
-				}
-		else if (e == panel_47  ){
-			if(SwingUtilities.isLeftMouseButton(arg0)){
-				((JComponent) e).setBackground(new Color(0,0,0));
-				count += 1;				
-				isEntered = true;
-				ships[arrayAssist] = selectObj(e);
-				arrayAssist += 1;
-				}
-			
-				}
-		else if (e == panel_48  ){
-			if(SwingUtilities.isLeftMouseButton(arg0)){
-				((JComponent) e).setBackground(new Color(0,0,0));
-				count += 1;				
-				isEntered = true;
-				ships[arrayAssist] = selectObj(e);
-				arrayAssist += 1;
-				}
-			
-				}
-		else if (e == panel_49  ){
-			if(SwingUtilities.isLeftMouseButton(arg0)){
-				((JComponent) e).setBackground(new Color(0,0,0));
-				count += 1;				
-				isEntered = true;
-				ships[arrayAssist] = selectObj(e);
-				arrayAssist += 1;
-				}
-			
-				}
-		else if (e == panel_50  ){
-			if(SwingUtilities.isLeftMouseButton(arg0)){
-				((JComponent) e).setBackground(new Color(0,0,0));
-				count += 1;				
-				isEntered = true;
-				ships[arrayAssist] = selectObj(e);
-				arrayAssist += 1;
-				}
-			
-				}
-		else if (e == panel_51  ){
-			if(SwingUtilities.isLeftMouseButton(arg0)){
-				((JComponent) e).setBackground(new Color(0,0,0));
-				count += 1;				
-				isEntered = true;
-				ships[arrayAssist] = selectObj(e);
-				arrayAssist += 1;
-				}
-			
-				}
-		else if (e == panel_52  ){
-			if(SwingUtilities.isLeftMouseButton(arg0)){
-				((JComponent) e).setBackground(new Color(0,0,0));
-				count += 1;				
-				isEntered = true;
-				ships[arrayAssist] = selectObj(e);
-				arrayAssist += 1;
-				}
-			
-				}
-		else if (e == panel_53  ){
-			if(SwingUtilities.isLeftMouseButton(arg0)){
-				((JComponent) e).setBackground(new Color(0,0,0));
-				count += 1;				
-				isEntered = true;
-				ships[arrayAssist] = selectObj(e);
-				arrayAssist += 1;
-				}
-			
-				}
-		else if (e == panel_54  ){
-			if(SwingUtilities.isLeftMouseButton(arg0)){
-				((JComponent) e).setBackground(new Color(0,0,0));
-				count += 1;				
-				isEntered = true;
-				ships[arrayAssist] = selectObj(e);
-				arrayAssist += 1;
-				}
-			
-				}
-		else if (e == panel_55  ){
-			if(SwingUtilities.isLeftMouseButton(arg0)){
-				((JComponent) e).setBackground(new Color(0,0,0));
-				count += 1;				
-				isEntered = true;
-				ships[arrayAssist] = selectObj(e);
-				arrayAssist += 1;
-				}
-			
-				}
-		else if (e == panel_56  ){
-			if(SwingUtilities.isLeftMouseButton(arg0)){
-				((JComponent) e).setBackground(new Color(0,0,0));
-				count += 1;				
-				isEntered = true;
-				ships[arrayAssist] = selectObj(e);
-				arrayAssist += 1;
-				}
-			
-				}
-		else if (e == panel_57  ){
-			if(SwingUtilities.isLeftMouseButton(arg0)){
-				((JComponent) e).setBackground(new Color(0,0,0));
-				count += 1;				
-				isEntered = true;
-				ships[arrayAssist] = selectObj(e);
-				arrayAssist += 1;
-				}
-			
-				}
-		else if (e == panel_58  ){
-			if(SwingUtilities.isLeftMouseButton(arg0)){
-				((JComponent) e).setBackground(new Color(0,0,0));
-				count += 1;				
-				isEntered = true;
-				ships[arrayAssist] = selectObj(e);
-				arrayAssist += 1;
-				}
-			
-				}
-		else if (e == panel_59  ){
-			if(SwingUtilities.isLeftMouseButton(arg0)){
-				((JComponent) e).setBackground(new Color(0,0,0));
-				count += 1;				
-				isEntered = true;
-				ships[arrayAssist] = selectObj(e);
-				arrayAssist += 1;
-				}
-			
-				}
-		else if (e == panel_60  ){
-			if(SwingUtilities.isLeftMouseButton(arg0)){
-				((JComponent) e).setBackground(new Color(0,0,0));
-				count += 1;				
-				isEntered = true;
-				ships[arrayAssist] = selectObj(e);
-				arrayAssist += 1;
-				}
-			
-				}
-		else if (e == panel_61  ){
-			if(SwingUtilities.isLeftMouseButton(arg0)){
-				((JComponent) e).setBackground(new Color(0,0,0));
-				count += 1;				
-				isEntered = true;
-				ships[arrayAssist] = selectObj(e);
-				arrayAssist += 1;
-				}
-			
-				}
-		else if (e == panel_62  ){
-			if(SwingUtilities.isLeftMouseButton(arg0)){
-				((JComponent) e).setBackground(new Color(0,0,0));
-				count += 1;				
-				isEntered = true;
-				ships[arrayAssist] = selectObj(e);
-				arrayAssist += 1;
-				}
-			
-				}
-		else if (e == panel_63  ){
-			if(SwingUtilities.isLeftMouseButton(arg0)){
-				((JComponent) e).setBackground(new Color(0,0,0));
-				count += 1;				
-				isEntered = true;
-				ships[arrayAssist] = selectObj(e);
-				arrayAssist += 1;
-				}
-			
-				}
-		else if (e == panel_64  ){
-			if(SwingUtilities.isLeftMouseButton(arg0)){
-				((JComponent) e).setBackground(new Color(0,0,0));
-				count += 1;				
-				isEntered = true;
-				ships[arrayAssist] = selectObj(e);
-				arrayAssist += 1;
-				}
-			
-				}
-		((Component) e).setVisible(false);
-		
 	}
-	public void panelSet(Object e){
+	public void panelSet(Object e, Object d){
+		if(SwingUtilities.isLeftMouseButton((MouseEvent) d)){
+			blue = ((Component) e).getBackground();
+			((JComponent) e).setBackground(new Color(0,0,0));					
+			isEntered = true;
+			ships[arrayAssist] = selectObj(e);
+			arrayAssist += 1;
+			count += 1;
+			((JComponent) e).setEnabled(false);
+			}
+	}
+	public void setAttributes(Object e){
+		((JComponent) e).setBackground(new Color(0, 204, 255));
+		((JComponent) e).setForeground(new Color(51, 204, 204));
+		
+		
+		
 		
 	}
 	public void mouseEntered(MouseEvent arg0) {}
@@ -1436,6 +694,7 @@ public class SetShips extends JFrame implements ActionListener, MouseListener{
 		setVisible(false);
 		
 		//setShipArray();
+		dispArray();
 		JOptionPane.showMessageDialog(null, "Let the Game Begin! ");
 		new InitializeGame().setVisible(true);
 		JOptionPane.showMessageDialog(null, "Select a coordinate to begin your attack");
@@ -1445,6 +704,12 @@ public class SetShips extends JFrame implements ActionListener, MouseListener{
 	public void resetArray(){
 		for (int x = 0; x < ships.length; x++){
 			ships[x] = null;
+		}
+	}
+	
+	public void dispArray(){
+		for(int x = 0; x < ships.length; x ++){
+			System.out.println(ships[x]);
 		}
 	}
 	//TODO slector

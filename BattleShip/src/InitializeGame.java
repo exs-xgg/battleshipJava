@@ -150,7 +150,7 @@ public class InitializeGame extends JFrame implements ActionListener{
 	//TODO beginning of constructor
 	public InitializeGame(){
 		super("Set Up Game");
-		grabArray();
+		
 		setIconImage(Toolkit.getDefaultToolkit().getImage(InitializeGame.class.getResource("/com/sun/java/swing/plaf/windows/icons/Error.gif")));
 		getContentPane().setLayout(null);
 		setVisible(false);
@@ -842,7 +842,9 @@ public class InitializeGame extends JFrame implements ActionListener{
 		button_64.addActionListener(this);
 		
 		//FRAME PROPERTIES
-		
+		grabArray();
+		setMyShips();
+		display();
 		setResizable(false);
 		setSize(913,486);
 		setLocationRelativeTo(null);
@@ -850,6 +852,11 @@ public class InitializeGame extends JFrame implements ActionListener{
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 	}
 		//TODO ARRAY GRAB
+	public void display(){
+		for(int x = 0; x <homeBase.length ; x++){
+			System.out.println(homeBase[x]);
+		}
+	}
 	public void grabArray(){
 		for (int x = 0; x < homeBase.length ; x ++){
 			homeBase[x] = SetShips.ships[x];
@@ -871,7 +878,81 @@ public class InitializeGame extends JFrame implements ActionListener{
 		
 	}	
 	//TODO ENEMY PLACING GRID
-	
+	public void setKill(Object e){
+		((JComponent) e).setForeground(black);
+		((JComponent) e).setBackground(black);
+	}
+	public void setMyShips(){
+		for (int x = 0; x <homeBase.length ; x ++){
+			if (homeBase[x] == "panel_1"){
+				setKill(panel_1);
+			}
+		  else if (homeBase[x] == "panel_2"){setKill(panel_2);}
+		  else if (homeBase[x] == "panel_3"){setKill(panel_3);}
+		  else if (homeBase[x] == "panel_4"){setKill(panel_3);}
+		  else if (homeBase[x] == "panel_5"){setKill(panel_3);}
+		  else if (homeBase[x] == "panel_6"){setKill(panel_3);}
+		  else if (homeBase[x] == "panel_7"){setKill(panel_3);}
+		  else if (homeBase[x] == "panel_8"){setKill(panel_3);}
+		  else if (homeBase[x] == "panel_9"){setKill(panel_3);}
+		  else if (homeBase[x] == "panel_10"){setKill(panel_3);}
+		  else if (homeBase[x] == "panel_11"){setKill(panel_3);}
+		  else if (homeBase[x] == "panel_12"){setKill(panel_3);}
+		  else if (homeBase[x] == "panel_13"){setKill(panel_3);}
+		  else if (homeBase[x] == "panel_14"){setKill(panel_3);}
+		  else if (homeBase[x] == "panel_15"){setKill(panel_3);}
+		  else if (homeBase[x] == "panel_16"){setKill(panel_3);}
+		  else if (homeBase[x] == "panel_17"){setKill(panel_3);}
+		  else if (homeBase[x] == "panel_18"){setKill(panel_3);}
+		  else if (homeBase[x] == "panel_19"){setKill(panel_3);}
+		  else if (homeBase[x] == "panel_20"){setKill(panel_3);}
+		  else if (homeBase[x] == "panel_21"){setKill(panel_3);}
+		  else if (homeBase[x] == "panel_22"){setKill(panel_3);}
+		  else if (homeBase[x] == "panel_23"){setKill(panel_3);}
+		  else if (homeBase[x] == "panel_24"){setKill(panel_3);}
+		  else if (homeBase[x] == "panel_25"){setKill(panel_3);}
+		  else if (homeBase[x] == "panel_26"){setKill(panel_3);}
+		  else if (homeBase[x] == "panel_27"){setKill(panel_3);}
+		  else if (homeBase[x] == "panel_28"){setKill(panel_3);}
+		  else if (homeBase[x] == "panel_29"){setKill(panel_3);}
+		  else if (homeBase[x] == "panel_30"){setKill(panel_3);}
+		  else if (homeBase[x] == "panel_31"){setKill(panel_3);}
+		  else if (homeBase[x] == "panel_32"){setKill(panel_3);}
+		  else if (homeBase[x] == "panel_33"){setKill(panel_3);}
+		  else if (homeBase[x] == "panel_34"){setKill(panel_3);}
+		  else if (homeBase[x] == "panel_35"){setKill(panel_3);}
+		  else if (homeBase[x] == "panel_36"){setKill(panel_3);}
+		  else if (homeBase[x] == "panel_37"){setKill(panel_3);}
+		  else if (homeBase[x] == "panel_38"){setKill(panel_3);}
+		  else if (homeBase[x] == "panel_39"){setKill(panel_3);}
+		  else if (homeBase[x] == "panel_40"){setKill(panel_3);}
+		  else if (homeBase[x] == "panel_41"){setKill(panel_3);}
+		  else if (homeBase[x] == "panel_42"){setKill(panel_3);}
+		  else if (homeBase[x] == "panel_43"){setKill(panel_3);}
+		  else if (homeBase[x] == "panel_44"){setKill(panel_3);}
+		  else if (homeBase[x] == "panel_45"){setKill(panel_3);}
+		  else if (homeBase[x] == "panel_46"){setKill(panel_3);}
+		  else if (homeBase[x] == "panel_47"){setKill(panel_3);}
+		  else if (homeBase[x] == "panel_48"){setKill(panel_3);}
+		  else if (homeBase[x] == "panel_49"){setKill(panel_3);}
+		  else if (homeBase[x] == "panel_50"){setKill(panel_3);}
+		  else if (homeBase[x] == "panel_51"){setKill(panel_3);}
+		  else if (homeBase[x] == "panel_52"){setKill(panel_3);}
+		  else if (homeBase[x] == "panel_53"){setKill(panel_3);}
+		  else if (homeBase[x] == "panel_54"){setKill(panel_3);}
+		  else if (homeBase[x] == "panel_55"){setKill(panel_3);}
+		  else if (homeBase[x] == "panel_56"){setKill(panel_3);}
+		  else if (homeBase[x] == "panel_57"){setKill(panel_3);}
+		  else if (homeBase[x] == "panel_58"){setKill(panel_3);}
+		  else if (homeBase[x] == "panel_59"){setKill(panel_3);}
+		  else if (homeBase[x] == "panel_60"){setKill(panel_3);}
+		  else if (homeBase[x] == "panel_61"){setKill(panel_3);}
+		  else if (homeBase[x] == "panel_62"){setKill(panel_3);}
+		  else if (homeBase[x] == "panel_63"){setKill(panel_3);}
+		  else if (homeBase[x] == "panel_64"){setKill(panel_3);}
+		  else setKill(panel_64);
+		}
+	}
 	//TODO hit fxn
 	
 	
