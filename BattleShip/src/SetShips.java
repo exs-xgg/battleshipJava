@@ -694,7 +694,7 @@ public class SetShips extends JFrame implements ActionListener, MouseListener{
 		setVisible(false);
 		
 		//setShipArray();
-		dispArray();
+	//	dispArray();
 		JOptionPane.showMessageDialog(null, "Let the Game Begin! ");
 		new InitializeGame().setVisible(true);
 		JOptionPane.showMessageDialog(null, "Select a coordinate to begin your attack");
