@@ -8,7 +8,7 @@ public class SetShips extends JFrame implements ActionListener, MouseListener{
 	//TODO
 	boolean isEntered = false;
 	int count = 0;
-	public static String[] ships = new String[30];
+	public static String[] ships = new String[64];
 	public static int arrayAssist = 0;
 	Color blue= new Color(0,0,0);
 
